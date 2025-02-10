@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -187,15 +191,16 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+--- !u!4 &44990474 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
+  m_PrefabInstance: {fileID: 2041354173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &49044852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,6 +209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -264,10 +273,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -472,14 +477,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -661,6 +666,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
   m_PrefabInstance: {fileID: 934739541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &152056968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152056969}
+  - component: {fileID: 152056970}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152056969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152056968}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.598, z: 0}
+  m_LocalScale: {x: 2.9499993, y: 0.1875, z: 1.7000002}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 541804045}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &152056970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152056968}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &157712778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
@@ -907,8 +965,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 0.09, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 3.5802028, z: 10}
+  m_Center: {x: 0, y: -1.7451016, z: 0}
 --- !u!1 &186519840
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +1002,10 @@ Transform:
   - {fileID: 2119926925}
   - {fileID: 906976246}
   - {fileID: 754736387}
+  - {fileID: 1021062375}
+  - {fileID: 1284239988}
+  - {fileID: 44990474}
+  - {fileID: 1985217936}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192406515
@@ -1195,7 +1257,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 152056969}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c30633eb88337cd469af881b35144b21, type: 3}
       insertIndex: -1
@@ -1267,83 +1332,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 11592c2782b6ec24d9ffa904a08eebce, type: 3}
   m_PrefabInstance: {fileID: 230045589}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &243055672
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4129890698586816418, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_Name
-      value: BookStoreObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229633707170413903, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_AttachEaseInTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6426949768946833824, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0524
-      objectReference: {fileID: 0}
-    - target: {fileID: 6426949768946833824, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0042
-      objectReference: {fileID: 0}
-    - target: {fileID: 8191096412872303305, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.3242
-      objectReference: {fileID: 0}
-    - target: {fileID: 8191096412872303305, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8547954196276368809, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a24e7a2122b67d43bd447505b2e63a2, type: 3}
 --- !u!1001 &256125145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1475,6 +1463,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -1531,10 +1523,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (7)
@@ -2581,8 +2569,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.10000019, y: 2.9999998, z: 15.000002}
-  m_Center: {x: 0.0000000949949, y: 0.46157405, z: 0.031145576}
+  m_Size: {x: 0.4512526, y: 2.9999998, z: 15.000002}
+  m_Center: {x: -0.17562641, y: 0.46157408, z: 0.031145325}
 --- !u!4 &435208085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2117743740541598543, guid: 05dafd0b8a443b544aa59efc2f3dff7b, type: 3}
@@ -2671,32 +2659,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05dafd0b8a443b544aa59efc2f3dff7b, type: 3}
---- !u!1 &453581137 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4900579305957735553, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-  m_PrefabInstance: {fileID: 999852450}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &453581142
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453581137}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.00050903787, y: 0.001033349, z: 0.0066999313}
-  m_Center: {x: 0.0000018754602, y: -0.00011453096, z: 0.0006719917}
 --- !u!4 &456425750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
@@ -3190,6 +3152,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03963b00e7a590d468d1eb1e6283c1c5, type: 3}
+--- !u!1 &512949874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512949875}
+  - component: {fileID: 512949876}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512949875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512949874}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.598, z: 0}
+  m_LocalScale: {x: 2.95, y: 0.1875, z: 1.7}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2050269640}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &512949876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512949874}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &521942958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3254,14 +3269,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (7)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3328,11 +3343,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
   m_PrefabInstance: {fileID: 1561554351}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &530239095 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
-  m_PrefabInstance: {fileID: 969687457}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &532257382 stripped
 Transform:
@@ -3644,14 +3654,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4000,11 +4010,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c30633eb88337cd469af881b35144b21, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2050269637}
+      addedObject: {fileID: 512949875}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c30633eb88337cd469af881b35144b21, type: 3}
 --- !u!4 &616519935 stripped
 Transform:
@@ -4075,14 +4085,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4235,14 +4245,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 5094585849467138616, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4266,6 +4276,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -4322,10 +4336,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (1)
@@ -4465,14 +4475,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7929374763350027744, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4486,6 +4496,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -4541,14 +4559,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4609,6 +4619,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
   m_PrefabInstance: {fileID: 1934229892}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &658924377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 658924378}
+  - component: {fileID: 658924379}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &658924378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658924377}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.598, z: 0}
+  m_LocalScale: {x: 2.9499993, y: 0.1875, z: 1.7000002}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 677449897}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &658924379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658924377}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &660046134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1077739245844401179, guid: 8e9ce79f49a70444cae5099bb4f0eb36, type: 3}
@@ -4695,11 +4758,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2035360038}
+      addedObject: {fileID: 935593876}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
 --- !u!4 &673532103 stripped
 Transform:
@@ -5104,6 +5167,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -5164,10 +5231,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5237,14 +5300,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5635,6 +5698,59 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!1 &762037080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762037081}
+  - component: {fileID: 762037082}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762037081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762037080}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.598, z: 0}
+  m_LocalScale: {x: 2.9499993, y: 0.1875, z: 1.7000002}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1175226164}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &762037082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762037080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &762279335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
@@ -5818,6 +5934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -5874,10 +5994,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (8)
@@ -6241,8 +6357,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.100000024, y: 2.9999998, z: 16.000006}
-  m_Center: {x: -0.000000003725291, y: 0.46157405, z: 0.0311463}
+  m_Size: {x: 0.98136824, y: 2.9999998, z: 16.000006}
+  m_Center: {x: 0.44068435, y: 0.46157408, z: 0.031146374}
 --- !u!1001 &782498496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6464,14 +6580,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 5094585849467138616, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6485,6 +6601,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -6541,14 +6665,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6587,6 +6703,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -6643,14 +6767,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6669,6 +6785,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -6729,10 +6849,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (11)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6996,7 +7112,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 762037081}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c30633eb88337cd469af881b35144b21, type: 3}
       insertIndex: -1
@@ -7142,8 +7261,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.10000019, y: 2.9999998, z: 15.000002}
-  m_Center: {x: 0.0000000949949, y: 0.46157405, z: 0.031145576}
+  m_Size: {x: 0.10000019, y: 45.66913, z: 15.000002}
+  m_Center: {x: 0.000000096271776, y: 21.79614, z: 0.031145325}
 --- !u!33 &912161097
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -7572,14 +7691,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7741,6 +7860,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -7797,14 +7924,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7818,6 +7937,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -7878,15 +8001,64 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+--- !u!1 &935593875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935593876}
+  - component: {fileID: 935593877}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935593876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935593875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 673532103}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &935593877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935593875}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0000005, y: 0.2, z: 2.0000005}
+  m_Center: {x: -0.00000017881393, y: 0, z: 0.000000059604645}
 --- !u!1001 &939530942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7981,7 +8153,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 186519841}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalScale.x
@@ -8009,7 +8181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8115,38 +8287,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 969687461}
+      addedObject: {fileID: 1859847313}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
 --- !u!4 &969687458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
   m_PrefabInstance: {fileID: 969687457}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &969687461
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530239095}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.0000005, y: 1.0000002, z: 2.0000005}
-  m_Center: {x: -0.00000017881393, y: 0.5, z: 0.000000059604645}
 --- !u!1001 &970034512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8407,87 +8558,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e64a3cf823820e45ba6b9ac8f137254, type: 3}
---- !u!1001 &999852450
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2205054989597203370, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_SelectMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2205054989597203370, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_UseDynamicAttach
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5885500355953779209, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_Name
-      value: Grab_Axe
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8640947455707312942, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2130775365329014491, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4900579305957735553, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 453581142}
-  m_SourcePrefab: {fileID: 100100000, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}
 --- !u!4 &1004332338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 75782396987210836, guid: a1367a61b55523f4dbc6ae81250ffe92, type: 3}
@@ -8629,19 +8699,97 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (9)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
+--- !u!1001 &1021062374
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 186519841}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.591
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.2105
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+      propertyPath: m_Name
+      value: sword_shield
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+--- !u!4 &1021062375 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3f709f5e9601c5d49991458f8220c96a, type: 3}
+  m_PrefabInstance: {fileID: 1021062374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1034951266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8650,6 +8798,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -8710,10 +8862,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8800,6 +8948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -8856,10 +9008,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (4)
@@ -9283,6 +9431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -9343,10 +9495,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9427,7 +9575,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c8929316e3be1d544893122395dae11c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461104027}
   m_SourcePrefab: {fileID: 100100000, guid: c8929316e3be1d544893122395dae11c, type: 3}
 --- !u!1001 &1109602276
 PrefabInstance:
@@ -9493,14 +9644,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 5094585849467138616, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10086,6 +10237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -10141,14 +10300,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10397,14 +10548,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7929374763350027744, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10423,6 +10574,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -10478,14 +10637,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10780,6 +10931,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 49ebdc4b73cb69b40afeb9ae2c694f26, type: 3}
   m_PrefabInstance: {fileID: 1987167715}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1284239988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
+  m_PrefabInstance: {fileID: 954756629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1285674773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7289161985750903937, guid: ddaa4dfde3e22cb4abf95d6e54707838, type: 3}
@@ -10813,6 +10969,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -10869,10 +11029,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (9)
@@ -11033,6 +11189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11089,10 +11249,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (10)
@@ -11110,6 +11266,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11165,14 +11329,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11305,6 +11461,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11361,10 +11521,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green
@@ -11392,6 +11548,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11448,10 +11608,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (5)
@@ -11556,6 +11712,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1077739245844401179, guid: 8e9ce79f49a70444cae5099bb4f0eb36, type: 3}
   m_PrefabInstance: {fileID: 2065684365}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1461104024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c8929316e3be1d544893122395dae11c, type: 3}
+  m_PrefabInstance: {fileID: 1108735929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1461104027
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461104024}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8786298198069103963, guid: c8929316e3be1d544893122395dae11c, type: 3}
 --- !u!1001 &1464930858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11776,6 +11959,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11831,14 +12022,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12317,14 +12500,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12716,6 +12899,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -12771,14 +12962,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12850,6 +13033,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -12906,10 +13093,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (11)
@@ -12927,6 +13110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -12987,10 +13174,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (10)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13186,7 +13369,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 186519841}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalScale.x
@@ -13214,7 +13397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.y
@@ -13222,7 +13405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13522,11 +13705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2018ec2ee6b0e4f48a6bf7b7aa963c0f, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2018ec2ee6b0e4f48a6bf7b7aa963c0f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2089332868}
+      addedObject: {fileID: 2048018418}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2018ec2ee6b0e4f48a6bf7b7aa963c0f, type: 3}
 --- !u!4 &1624818614 stripped
 Transform:
@@ -13612,14 +13795,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13643,6 +13826,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -13699,10 +13886,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (3)
@@ -13720,6 +13903,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -13776,10 +13963,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (6)
@@ -13802,6 +13985,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -13862,10 +14049,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14134,7 +14317,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 658924378}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c30633eb88337cd469af881b35144b21, type: 3}
       insertIndex: -1
@@ -14560,8 +14746,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.10000019, y: 2.9999998, z: 15.000002}
-  m_Center: {x: 0.0000000949949, y: 0.46157405, z: 0.031145576}
+  m_Size: {x: 1.0375578, y: 2.9999998, z: 15.000002}
+  m_Center: {x: 0.46877915, y: 0.46157408, z: 0.031145325}
 --- !u!4 &1726265212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
@@ -14697,14 +14883,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7929374763350027744, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14848,6 +15034,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -14908,10 +15098,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14981,14 +15167,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 5094585849467138616, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15022,6 +15208,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -15077,14 +15271,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15172,6 +15358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -15228,10 +15418,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4250771782565278554, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (2)
@@ -15355,6 +15541,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b240f1bda6081d409dc8dd4a2c145d0, type: 3}
+--- !u!1 &1859847312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859847313}
+  - component: {fileID: 1859847314}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1859847313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859847312}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 969687458}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1859847314
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859847312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0000005, y: 0.2, z: 2.0000005}
+  m_Center: {x: -0.00000017881393, y: 0, z: 0.000000059604645}
 --- !u!4 &1877957973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7797050990099208882, guid: b54f93b6f37eaa849ab90a6c6a41eba6, type: 3}
@@ -15373,6 +15612,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -15433,10 +15676,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (6)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15847,14 +16086,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (11)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16062,14 +16301,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (10)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16199,14 +16438,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 241379134001037136, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (8)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16546,6 +16785,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
   m_PrefabInstance: {fileID: 1034951266}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1985217936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
+  m_PrefabInstance: {fileID: 1581558982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1987167715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16792,14 +17036,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7929374763350027744, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16862,39 +17106,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1367a61b55523f4dbc6ae81250ffe92, type: 3}
---- !u!1 &2035360035 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9ab09fb05fd5949afc16a389159a6a, type: 3}
-  m_PrefabInstance: {fileID: 673532102}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2035360038
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035360035}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.0000005, y: 1.0000002, z: 2.0000005}
-  m_Center: {x: -0.00000017881393, y: 0.5, z: 0.000000059604645}
 --- !u!1001 &2041354173
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 186519841}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalScale.x
@@ -16922,7 +17140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
       propertyPath: m_LocalRotation.y
@@ -16957,18 +17175,45 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a9db343070990c4f89ac4db1d334811, type: 3}
---- !u!1 &2050269633 stripped
+--- !u!1 &2048018417
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c30633eb88337cd469af881b35144b21, type: 3}
-  m_PrefabInstance: {fileID: 614502943}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &2050269637
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048018418}
+  - component: {fileID: 2048018419}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2048018418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048018417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.897, z: 0}
+  m_LocalScale: {x: 1.95, y: 0.2125, z: 3.975}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1624818614}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2048018419
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050269633}
+  m_GameObject: {fileID: 2048018417}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -16981,8 +17226,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.997717, y: 0.70748615, z: 1.7150649}
-  m_Center: {x: 0.0005941392, y: 0.35374308, z: 0.003947229}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2050269640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
@@ -17001,6 +17246,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -17057,14 +17310,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17078,6 +17323,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
+    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Medium_Green
+      objectReference: {fileID: 0}
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -17133,14 +17386,6 @@ PrefabInstance:
     - target: {fileID: 5734243891264932526, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
-    - target: {fileID: 5578545743793841456, guid: a960b690e3a1e064584eeb50c326aca6, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Medium_Green
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17332,89 +17577,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 11592c2782b6ec24d9ffa904a08eebce, type: 3}
   m_PrefabInstance: {fileID: 2086178568}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2089332865 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2018ec2ee6b0e4f48a6bf7b7aa963c0f, type: 3}
-  m_PrefabInstance: {fileID: 1624818613}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2089332868
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089332865}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.000001, y: 1.0000006, z: 4.0000014}
-  m_Center: {x: 0.00000017881398, y: 0.50000006, z: 0}
---- !u!1001 &2092166401
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1148235982518712007, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_Name
-      value: PotionStoreObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.743
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.9931905
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4620521908674321612, guid: ba23a646b97871048917576ca90c4a60, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba23a646b97871048917576ca90c4a60, type: 3}
 --- !u!1001 &2097194875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17559,6 +17721,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
+    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
+      propertyPath: m_Name
+      value: Spawner_Potion_Small_Red (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -17619,10 +17785,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
-    - target: {fileID: 898345238445855704, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
-      propertyPath: m_Name
-      value: Spawner_Potion_Small_Red (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18018,8 +18180,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.100000024, y: 2.9999998, z: 16.000006}
-  m_Center: {x: -0.000000003725291, y: 0.46157405, z: 0.0311463}
+  m_Size: {x: 0.80402833, y: 2.9999998, z: 16.000006}
+  m_Center: {x: -0.35201424, y: 0.46157408, z: 0.031146374}
 --- !u!1001 &2133416357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18157,11 +18319,5 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 186519841}
   - {fileID: 1044316643}
-  - {fileID: 243055672}
-  - {fileID: 999852450}
-  - {fileID: 954756629}
-  - {fileID: 2041354173}
-  - {fileID: 1581558982}
-  - {fileID: 2092166401}
   - {fileID: 377561262}
   - {fileID: 926847235}

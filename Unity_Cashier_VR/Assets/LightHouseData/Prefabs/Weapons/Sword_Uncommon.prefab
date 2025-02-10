@@ -122,6 +122,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ed8fff90b24d7243913bb7de1fabf41, type: 3}
   m_PrefabInstance: {fileID: 221605062824947176}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1500500222990184812 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 8ed8fff90b24d7243913bb7de1fabf41, type: 3}
+  m_PrefabInstance: {fileID: 221605062824947176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7808464822716355700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +135,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1500500222990184812}
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_MaterialIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1637624880468778975, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068

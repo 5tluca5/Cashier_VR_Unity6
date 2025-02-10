@@ -115,6 +115,11 @@ PrefabInstance:
       addedObject: {fileID: 6483873012162729330}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95fe7f57691a2fc4aa867c4411cb9c9e, type: 3}
+--- !u!23 &451043159280413304 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 95fe7f57691a2fc4aa867c4411cb9c9e, type: 3}
+  m_PrefabInstance: {fileID: 1262126085129500412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1587872369074540823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95fe7f57691a2fc4aa867c4411cb9c9e, type: 3}
@@ -128,6 +133,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 451043159280413304}
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_MaterialIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1637624880468778975, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1

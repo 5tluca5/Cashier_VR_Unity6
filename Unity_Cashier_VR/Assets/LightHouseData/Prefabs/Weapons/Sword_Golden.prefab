@@ -61,6 +61,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 8425779209200959969}
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_MaterialIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1637624880468778975, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -205,5 +213,10 @@ PrefabInstance:
 --- !u!4 &7252287781954943630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e91769b8e515f0241be527247b65a264, type: 3}
+  m_PrefabInstance: {fileID: 7147199608893545829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8425779209200959969 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: e91769b8e515f0241be527247b65a264, type: 3}
   m_PrefabInstance: {fileID: 7147199608893545829}
   m_PrefabAsset: {fileID: 0}
