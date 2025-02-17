@@ -1,19 +1,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UniRx;
 
-public class CustomerManager
+public class CustomerManager : MonoBehaviour
 {
 
     [Header("Settings")]
     [SerializeField] bool spawnCustomers = true;
-    [SerializeField] int maxCustomerCount = 10;
+    [SerializeField] int maxCustomerCount = 20;
     [SerializeField] float spawnInterval = 5;
 
     [Header("References")]
-    [SerializeField] GameObject customerPrefab;
-    [SerializeField] GameObject realCustomerPrefab;
-    [SerializeField] Transform customerParent;
+    [SerializeField] ObjectPool customerPool;
+    
 
     [Header("Paths")]
     [SerializeField] CustomerPathPoint customerSpawnPoint;
@@ -24,8 +24,13 @@ public class CustomerManager
 
     //Spawning customers
     private float spawnTimer = 0;
-    private List<Customer> customers = new List<Customer>();
 
+    private void Start()
+    {
+        customerPool.setPoolSize(maxCustomerCount);
+
+        customerPool.Initialize();
+    }
 
     void Update()
     {
@@ -34,7 +39,7 @@ public class CustomerManager
 
     private void SpawnCustomerProcedure()
     {
-        if (spawnCustomers && customers.Count < maxCustomerCount)
+        if (spawnCustomers && customerPool.GetActiveObjectCount() < maxCustomerCount)
         {
             spawnTimer += Time.deltaTime;
 
@@ -48,16 +53,28 @@ public class CustomerManager
 
     private void SpawnCustomer()
     {
-        GameObject prefab = customerPrefab;
-        GameObject customerObject = GameObject.Instantiate(prefab, customerSpawnPoint.position, Quaternion.identity, customerParent);
+        GameObject customerObject = customerPool.GetObject();
         Customer customer = customerObject.GetComponent<Customer>();
+        customer.Reset();
+
+        customerObject.transform.position = customerSpawnPoint.position;
+        customerObject.transform.rotation = customerSpawnPoint.rotation;
         
+        customer.PushPath(customerSpawnPoint);
         customer.PushPath(customerEntryPoint);
 
         int totalPathCount = Random.Range(1, customerPaths.Length);
 
         customer.ConcatPath(customerPaths.OrderBy(x => Random.value).Take(totalPathCount).ToList());
 
-        customers.Add(customer);
+        customer.PushPath(customerExitPoint);
+        customer.OnLeft().Subscribe(OnCustomerLeft);
+
+        customer.Activate();
+    }
+
+    private void OnCustomerLeft(Customer customer)
+    {
+        customerPool.ReturnObject(customer.gameObject);
     }
 }
