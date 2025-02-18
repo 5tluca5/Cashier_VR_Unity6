@@ -60,7 +60,6 @@ public class CustomerManager : MonoBehaviour
         customerObject.transform.position = customerSpawnPoint.position;
         customerObject.transform.rotation = customerSpawnPoint.rotation;
         
-        customer.PushPath(customerSpawnPoint);
         customer.PushPath(customerEntryPoint);
 
         int totalPathCount = Random.Range(1, customerPaths.Length);

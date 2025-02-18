@@ -59,7 +59,7 @@ public class Customer : MonoBehaviour
 
         if (pathPoints.Count > 0)
         {
-            SetDestination(customerPathPoint.position).ToObservable().Subscribe();
+            SetDestination(customerPathPoint).ToObservable().Subscribe();
         }
     }
 
@@ -105,24 +105,35 @@ public class Customer : MonoBehaviour
         float rotationSpeed = agent.angularSpeed * Time.deltaTime;
         model.transform.rotation = Quaternion.RotateTowards(model.transform.rotation, targetRotation, rotationSpeed);
     }
-    IEnumerator SetDestination(Vector3 destination)
+    IEnumerator SetDestination(CustomerPathPoint point)
     {
-        customerPathPoint.CustomerReserved();
-        Debug.Log(name + "Set destination: " + customerPathPoint.name);
-        // bool lookAroundBeforeGoing = Random.value > 0.5f;
+        point.CustomerReserved();
+        Debug.Log(name + "Set destination: " + point.name);
 
-        // if (lookAroundBeforeGoing)
-        // {
-            yield return StartCoroutine(RotateTowards(Quaternion.LookRotation(destination - transform.position)));
+        if(point.GetRandomBehaviour() != CustomerBehaviour.Leaving)
+        {
+            yield return StartCoroutine(RotateTowards(Quaternion.LookRotation(point.position - transform.position)));
 
-        //     animator.SetTrigger(lookAroundKey);
+        bool lookAroundBeforeGoing = Random.value > 0.5f;
 
-        //     yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
-        // }
+        if (lookAroundBeforeGoing)
+        {
+            animator.SetTrigger(lookAroundKey);
+
+            yield return new WaitForSeconds(2f);
+
+        }
+
+        float waitTime = Random.value;
+
+        yield return new WaitForSeconds(Random.value);
         
+        }
+        
+
         moving = true;
-        model.transform.rotation = transform.rotation;
-        agent.SetDestination(destination);
+        // model.transform.rotation = transform.rotation;
+        agent.SetDestination(point.position);
 
         yield return null;
     }
@@ -132,17 +143,17 @@ public class Customer : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         customerPathPoint.CustomerLeft();
-        
+
         currentPathIndex++;
 
-        while(customerPathPoint.IsOccupied())
+        while (customerPathPoint.IsOccupied())
         {
             currentPathIndex++;
         }
 
         if (currentPathIndex < pathPoints.Count)
         {
-            SetDestination(customerPathPoint.position).ToObservable().Subscribe();
+            SetDestination(customerPathPoint).ToObservable().Subscribe();
         }
         else
         {
@@ -190,7 +201,7 @@ public class Customer : MonoBehaviour
 
         Behave(behaviour);
 
-        if(behaviour == CustomerBehaviour.Leaving)
+        if (behaviour == CustomerBehaviour.Leaving)
         {
             yield break;
         }
@@ -202,12 +213,13 @@ public class Customer : MonoBehaviour
     IEnumerator RotateTowards(Quaternion rotation)
     {
         rotateTimer = 0f;
-        while (Mathf.Abs(Quaternion.Angle(transform.rotation, rotation)) > 0.1f)
+        float tolerance = 0.01f; // Adjust the tolerance value as needed
+        while (Mathf.Abs(rotation.eulerAngles.y - transform.rotation.eulerAngles.y) > tolerance)
         {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, agent.angularSpeed * 2 * Time.deltaTime);
             rotateTimer += Time.deltaTime;
 
-            if(rotateTimer > 5f)
+            if (rotateTimer > 2f)
             {
                 Debug.LogError(name + "Rotation took too long");
                 break;
