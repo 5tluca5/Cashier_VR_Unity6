@@ -12,15 +12,13 @@ public class ItemSpawner : MonoBehaviour
     [SerializeField] private Image progressBarImage;
 
     private float currentSpawnTime;
-    private bool hasItem;
+    private bool hasItem = true;
 
     private void Start()
     {
         progressBarImage.fillAmount = 0;
     }
 
-    // TODO: Convert this to event-based trigger to improve performance
-    // Maybe when we grab in VR, trigger an button based event in new input system...
     private void Update()
     {
         if (spawnLocation.childCount == 0)
@@ -40,8 +38,8 @@ public class ItemSpawner : MonoBehaviour
     private void SpawnItem()
     {
         // If we already have item then we don't do anything
-        if (hasItem)
-            return;
+        if (hasItem) return;
+
         var spawnedItem = Instantiate(prefabToSpawn, spawnLocation);
         hasItem = true;
     }
