@@ -238,6 +238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalCost: 0
+  titleText: {fileID: 2892987522571698549}
+  priceText: {fileID: 6407338561255925846}
 --- !u!1 &2775483467568397313
 GameObject:
   m_ObjectHideFlags: 0

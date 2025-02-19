@@ -3,24 +3,26 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DetectItemInArea : MonoBehaviour
 {
-    public event System.Action OnItemEnter;
-    public event System.Action OnItemExit;
+    public event System.Action<Transform> OnItemEnter;
+    public event System.Action<Transform> OnItemExit;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.GetComponentInParent<XRGrabInteractable>())
+        ItemCostData costData = other.transform.GetComponentInParent<ItemCostData>();
+        if (costData)
         {
-            Debug.Log("Item entered: " + other.transform);
-            OnItemEnter?.Invoke();
+            Debug.Log("Item entered: " + costData.transform);
+            OnItemEnter?.Invoke(costData.transform);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.transform.GetComponentInParent<XRGrabInteractable>())
+        ItemCostData costData = other.transform.GetComponentInParent<ItemCostData>();
+        if (costData)
         {
-            Debug.Log("Item exited: " + other.transform);
-            OnItemExit?.Invoke();
+            Debug.Log("Item exited: " + costData.transform);
+            OnItemExit?.Invoke(costData.transform);
         }
     }
 }
