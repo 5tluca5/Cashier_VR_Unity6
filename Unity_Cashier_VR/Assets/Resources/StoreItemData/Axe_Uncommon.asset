@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6295a569783d0084b99305370ed161a0, type: 3}
+  m_Name: Axe_Uncommon
+  m_EditorClassIdentifier: 
+  id: 100003
+  itemName: Axe_Uncommon
+  itemPrefab: {fileID: 8046233446887238916, guid: 9a74f693a6fc400458e07503b9e171a8, type: 3}

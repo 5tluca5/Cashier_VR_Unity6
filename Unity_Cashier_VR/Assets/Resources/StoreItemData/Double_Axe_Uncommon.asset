@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6295a569783d0084b99305370ed161a0, type: 3}
+  m_Name: Double_Axe_Uncommon
+  m_EditorClassIdentifier: 
+  id: 100006
+  itemName: Double_Axe_Uncommon
+  itemPrefab: {fileID: 4579216516843406206, guid: 0d6c73df959ecf74b958ba61d185ab3d, type: 3}

@@ -11,6 +11,7 @@ public enum CustomerBehaviour
     LookingUp,
     LookingAround,
     Sitting,
+    CheckingOut,
     Leaving
 }
 

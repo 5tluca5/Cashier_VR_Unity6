@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ItemThrowHandler : MonoBehaviour
 {
     private Rigidbody rb;
+    private HashSet<GameObject> collidingObjects = new HashSet<GameObject>();
 
     private void Awake()
     {
@@ -20,4 +21,5 @@ public class ItemThrowHandler : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints.None;
     }
+
 }
