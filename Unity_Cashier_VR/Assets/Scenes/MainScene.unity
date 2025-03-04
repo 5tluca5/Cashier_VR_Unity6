@@ -421,6 +421,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -481,10 +485,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (5)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -500,6 +500,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2117743740541598543, guid: 05dafd0b8a443b544aa59efc2f3dff7b, type: 3}
   m_PrefabInstance: {fileID: 128762190}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &110516659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110516660}
+  m_Layer: 0
+  m_Name: Dagger_Common
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &110516660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110516659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &114506231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
@@ -1075,6 +1106,37 @@ Transform:
   - {fileID: 1681023287}
   m_Father: {fileID: 787255455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &202578608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 202578609}
+  m_Layer: 0
+  m_Name: Crossbow_Uncommon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202578609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202578608}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &206701987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1137,6 +1199,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7797050990099208882, guid: b54f93b6f37eaa849ab90a6c6a41eba6, type: 3}
   m_PrefabInstance: {fileID: 139348280}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &210512883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210512884}
+  m_Layer: 0
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &210512884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210512883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &218159368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218159369}
+  m_Layer: 0
+  m_Name: Hammer_Common
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &218159369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218159368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &220162874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1463,10 +1587,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -1527,6 +1647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (7)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1946,6 +2070,37 @@ Transform:
   - {fileID: 793151525}
   m_Father: {fileID: 1044316643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &358191741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 358191742}
+  m_Layer: 0
+  m_Name: Crossbow_Common
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &358191742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358191741}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &374193905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2043,7 +2198,7 @@ Transform:
   m_GameObject: {fileID: 377561260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.808112, y: 1.1810516, z: -7.197037}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3326,6 +3481,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -3386,10 +3545,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (7)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3685,6 +3840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -3745,10 +3904,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (6)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4119,6 +4274,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -4179,10 +4338,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (3)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4279,6 +4434,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4921664091529797030, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -4339,10 +4498,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green (2)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4366,10 +4521,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -4430,6 +4581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4509,6 +4664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7850924144378593918, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -4569,10 +4728,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4869,6 +5024,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
   m_PrefabInstance: {fileID: 1707524371}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &684364206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 684364207}
+  m_Layer: 0
+  m_Name: Hammer_Golden
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &684364207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684364206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &687569823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5308,6 +5494,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -5368,10 +5558,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (1)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5762,6 +5948,37 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!1 &759185974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759185975}
+  m_Layer: 0
+  m_Name: Dagger_Golden
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759185975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759185974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762037080
 GameObject:
   m_ObjectHideFlags: 0
@@ -6111,10 +6328,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -6175,6 +6388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (8)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6701,6 +6918,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4921664091529797030, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -6761,10 +6982,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green (1)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6867,6 +7084,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 75782396987210836, guid: a1367a61b55523f4dbc6ae81250ffe92, type: 3}
   m_PrefabInstance: {fileID: 2133416357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &805605689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805605690}
+  m_Layer: 0
+  m_Name: Dagger_Uncommon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805605690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805605689}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &805755177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2117743740541598543, guid: 05dafd0b8a443b544aa59efc2f3dff7b, type: 3}
@@ -7812,6 +8060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -7872,10 +8124,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8548,6 +8796,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b54f93b6f37eaa849ab90a6c6a41eba6, type: 3}
+--- !u!1 &970463550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970463551}
+  m_Layer: 0
+  m_Name: Staff_Common
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970463551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970463550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &985055092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8817,6 +9096,37 @@ Transform:
   - {fileID: 527757500}
   m_Father: {fileID: 787255455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1016858132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016858133}
+  m_Layer: 0
+  m_Name: Quiver_Half
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016858133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016858132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1020732132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8825,6 +9135,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -8885,10 +9199,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (9)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9130,10 +9440,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -9194,6 +9500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9770,6 +10080,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4921664091529797030, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -9830,10 +10144,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green (3)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10236,6 +10546,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1047449203173702726, guid: 32627f29260aae341ac25fcd6e542f22, type: 3}
   m_PrefabInstance: {fileID: 2111798151}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1173678416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1173678417}
+  m_Layer: 0
+  m_Name: Quiver_Empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1173678417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173678416}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1173810408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1173810409}
+  m_Layer: 0
+  m_Name: Crossbow_Golden
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1173810409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173810408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1175226164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30633eb88337cd469af881b35144b21, type: 3}
@@ -10653,6 +11025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7850924144378593918, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -10713,10 +11089,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red (2)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11122,6 +11494,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7289161985750903937, guid: ddaa4dfde3e22cb4abf95d6e54707838, type: 3}
   m_PrefabInstance: {fileID: 270026501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1316419245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1316419246}
+  m_Layer: 0
+  m_Name: Quiver_Full
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1316419246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316419245}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1328935724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11130,10 +11533,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11194,6 +11593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (9)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11350,10 +11753,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11414,11 +11813,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (10)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
+--- !u!1 &1351897494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351897495}
+  m_Layer: 0
+  m_Name: Staff_Uncommon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1351897495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351897494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1357950043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11576,6 +12010,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 75782396987210836, guid: a1367a61b55523f4dbc6ae81250ffe92, type: 3}
   m_PrefabInstance: {fileID: 2032621978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374734724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374734725}
+  m_Layer: 0
+  m_Name: Hammer_Uncommon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374734725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374734724}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2111328836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380136530
 GameObject:
   m_ObjectHideFlags: 0
@@ -11627,10 +12092,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11691,6 +12152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11714,10 +12179,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -11778,6 +12239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12610,6 +13075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -12670,10 +13139,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (2)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13199,10 +13664,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -13263,6 +13724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (11)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13905,6 +14370,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -13965,10 +14434,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (4)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13992,10 +14457,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -14056,6 +14517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14069,10 +14534,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -14133,6 +14594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15106,6 +15571,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7850924144378593918, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -15166,10 +15635,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red (1)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15390,6 +15855,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4921664091529797030, guid: 4859a13b67b634d43a31224ae0acfb98, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -15450,10 +15919,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Green
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15637,10 +16102,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192406516}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     - target: {fileID: 4036104695395851460, guid: 83fe8783dfc9b9b4d94f537968f05370, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -15701,6 +16162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Small_Green (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9df611f15cda4fe438648861ec2f28b7, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2505642851634945670, guid: 95725cc3bfa6b4e4e96fbfa4ad90009c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16309,6 +16774,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -16369,10 +16838,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (11)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16524,6 +16989,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -16584,10 +17053,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (10)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16661,6 +17126,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1014520213}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 119157060608135374, guid: 6bd6af8e3b824b040a75cd52b62c525d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -16721,10 +17190,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Medium_Red (8)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 95a975f3bf686c14ea69fb1aaadbcfd8, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17259,6 +17724,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084246226}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     - target: {fileID: 7850924144378593918, guid: 28562bb003591df49aee19975c555245, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -17319,10 +17788,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_Potion_Large_Red (3)
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2601993e153fc8148aa57be31e4fe143, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: -382652638819485698, guid: 9c0b77ad47beb2041a1366a624b7a8cc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17606,10 +18071,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemInfoCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 4211925225583735044, guid: 0b94e73aab801004bbe8f598a577a1fa, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7220468736060795692, guid: 0b94e73aab801004bbe8f598a577a1fa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -17689,18 +18150,6 @@ PrefabInstance:
     - target: {fileID: 7220468736060795692, guid: 0b94e73aab801004bbe8f598a577a1fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206402865052342151, guid: 0b94e73aab801004bbe8f598a577a1fa, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.1138
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206402865052342151, guid: 0b94e73aab801004bbe8f598a577a1fa, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.9481
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206402865052342151, guid: 0b94e73aab801004bbe8f598a577a1fa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.791
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18110,6 +18559,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 11592c2782b6ec24d9ffa904a08eebce, type: 3}
   m_PrefabInstance: {fileID: 2101569895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2111328835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111328836}
+  m_Layer: 0
+  m_Name: '[---For John---] (Added weapons & spawners)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2111328836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111328835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 358191742}
+  - {fileID: 202578609}
+  - {fileID: 1173810409}
+  - {fileID: 110516660}
+  - {fileID: 805605690}
+  - {fileID: 759185975}
+  - {fileID: 218159369}
+  - {fileID: 1374734725}
+  - {fileID: 684364207}
+  - {fileID: 1173678417}
+  - {fileID: 1016858133}
+  - {fileID: 1316419246}
+  - {fileID: 210512884}
+  - {fileID: 970463551}
+  - {fileID: 1351897495}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2111798151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18718,3 +19213,4 @@ SceneRoots:
   - {fileID: 1044316643}
   - {fileID: 377561262}
   - {fileID: 926847235}
+  - {fileID: 2111328836}
