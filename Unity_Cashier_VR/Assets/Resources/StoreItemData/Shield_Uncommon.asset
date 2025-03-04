@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6295a569783d0084b99305370ed161a0, type: 3}
   m_Name: Shield_Uncommon
   m_EditorClassIdentifier: 
-  id: 100010
+  id: 100042
   itemName: Shield_Uncommon
   itemPrefab: {fileID: 3486816243563353114, guid: 75b969083fce083459a0b086e67bb983, type: 3}

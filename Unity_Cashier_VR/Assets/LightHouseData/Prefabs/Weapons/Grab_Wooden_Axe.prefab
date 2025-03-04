@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 8640947455707312942}
   - component: {fileID: 6833058575459145835}
   - component: {fileID: 2205054989597203370}
+  - component: {fileID: -2471014018940280101}
   m_Layer: 0
   m_Name: Grab_Wooden_Axe
   m_TagString: Untagged
@@ -357,6 +358,19 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &-2471014018940280101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885500355953779209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649b42eefcb8f1049a6a09d1fb3fe026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storeItemData: {fileID: 11400000, guid: 64c5de731bd00ce41b1667393e4e5df5, type: 2}
 --- !u!1001 &574756807017799313
 PrefabInstance:
   m_ObjectHideFlags: 0

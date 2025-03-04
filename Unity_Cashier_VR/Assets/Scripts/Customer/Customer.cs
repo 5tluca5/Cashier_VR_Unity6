@@ -54,6 +54,7 @@ public class Customer : MonoBehaviour
         onLeft = new Subject<Customer>();
     }
 
+    [ContextMenu("Activate")]
     public void Activate()
     {
         agent.enabled = true;
@@ -109,7 +110,7 @@ public class Customer : MonoBehaviour
     IEnumerator SetDestination(CustomerPathPoint point)
     {
         point.CustomerReserved();
-        Debug.Log(name + "Set destination: " + point.name);
+        //Debug.Log(name + "Set destination: " + point.name);
 
         if(point.GetRandomBehaviour() != CustomerBehaviour.Leaving)
         {
@@ -139,7 +140,7 @@ public class Customer : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator GoToNextPathPoint(float waitTime)
+    protected IEnumerator GoToNextPathPoint(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
 
@@ -197,12 +198,12 @@ public class Customer : MonoBehaviour
 
         // rotate to the direction of the path point, then behave
         // model.transform.LookAt(pathPoint.targetPosition);
-        Debug.Log(name + "Reached destination: " + pathPoint.name);
+        //Debug.Log(name + "Reached destination: " + pathPoint.name);
         yield return StartCoroutine(RotateTowards(pathPoint.rotation));
 
         Behave(behaviour);
 
-        if (behaviour == CustomerBehaviour.Leaving)
+        if (behaviour == CustomerBehaviour.Leaving || behaviour == CustomerBehaviour.CheckingOut)
         {
             yield break;
         }
@@ -230,7 +231,7 @@ public class Customer : MonoBehaviour
     }
     void Behave(CustomerBehaviour behaviour)
     {
-        Debug.Log(name + "Behaving: " + behaviour);
+        //Debug.Log(name + "Behaving: " + behaviour);
 
         switch (behaviour)
         {
@@ -245,11 +246,19 @@ public class Customer : MonoBehaviour
             case CustomerBehaviour.Leaving:
                 Leaving();
                 break;
+            case CustomerBehaviour.CheckingOut:
+                Checkout();
+                break;
         }
     }
 
     void Leaving()
     {
         onLeft.OnNext(this);
+    }
+
+    virtual protected void Checkout()
+    {
+
     }
 }

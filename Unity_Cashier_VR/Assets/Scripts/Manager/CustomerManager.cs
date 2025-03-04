@@ -13,7 +13,7 @@ public class CustomerManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] ObjectPool customerPool;
-    
+    [SerializeField] RealCustomer realCustomer;
 
     [Header("Paths")]
     [SerializeField] CustomerPathPoint customerSpawnPoint;
@@ -72,8 +72,29 @@ public class CustomerManager : MonoBehaviour
         customer.Activate();
     }
 
+    public void SpawnRealCustomer(StoreItemData desiredItemData)
+    {
+        realCustomer.gameObject.SetActive(true);
+        realCustomer.SetDesireItem(desiredItemData);
+        realCustomer.transform.position = customerSpawnPoint.position;
+        realCustomer.transform.rotation = customerSpawnPoint.rotation;
+        realCustomer.PushPath(customerEntryPoint);
+        realCustomer.PushPath(customerCashierPoint);
+        realCustomer.PushPath(customerExitPoint);
+        realCustomer.OnLeft().Subscribe(x =>
+        {
+            realCustomer.gameObject.SetActive(false);
+        });
+        realCustomer.Activate();
+    }
+
     private void OnCustomerLeft(Customer customer)
     {
         customerPool.ReturnObject(customer.gameObject);
+    }
+
+    public bool HasCurrentRealCustomerLeft()
+    {
+        return !realCustomer.gameObject.activeSelf;
     }
 }

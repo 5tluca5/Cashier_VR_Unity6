@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6295a569783d0084b99305370ed161a0, type: 3}
   m_Name: Sword_Uncommon
   m_EditorClassIdentifier: 
-  id: 100013
+  id: 100045
   itemName: Sword_Uncommon
   itemPrefab: {fileID: 3108752662376000269, guid: 802bdb08a9319c240b928370b794f178, type: 3}

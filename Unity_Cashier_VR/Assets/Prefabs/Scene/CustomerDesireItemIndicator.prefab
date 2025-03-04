@@ -146,6 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2638250034440210893}
+  - component: {fileID: 1174956120068837075}
   m_Layer: 0
   m_Name: CustomerDesireItemIndicator
   m_TagString: Untagged
@@ -170,6 +171,21 @@ Transform:
   - {fileID: 2941022606504163162}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1174956120068837075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399437400487412691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380c9a9f096757a43b00fad2c069fc59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storeItemDataList: []
+  itemParent: {fileID: 1025355817281064261}
+  item: {fileID: 4818484883518546349}
 --- !u!1 &7942500058333071351
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,5 +282,10 @@ PrefabInstance:
 --- !u!4 &1829339775299882252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7219562142499205087, guid: 0d6c73df959ecf74b958ba61d185ab3d, type: 3}
+  m_PrefabInstance: {fileID: 9030305843009807059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4818484883518546349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4579216516843406206, guid: 0d6c73df959ecf74b958ba61d185ab3d, type: 3}
   m_PrefabInstance: {fileID: 9030305843009807059}
   m_PrefabAsset: {fileID: 0}

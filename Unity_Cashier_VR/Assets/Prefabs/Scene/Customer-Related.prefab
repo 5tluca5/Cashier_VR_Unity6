@@ -1341,6 +1341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomerPath (Cashier)
       objectReference: {fileID: 0}
+    - target: {fileID: 5166337227020961084, guid: 2ddff128eb6454ca7bda853eb435b5b6, type: 3}
+      propertyPath: 'posibleBehaviours.Array.data[0]'
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6151540667395051708, guid: 2ddff128eb6454ca7bda853eb435b5b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1410,8 +1414,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8962023668224593890}
     m_Modifications:
+    - target: {fileID: 738477833906096023, guid: 0afa613265c20534e93ab0115b10c900, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1399437400487412691, guid: 0afa613265c20534e93ab0115b10c900, type: 3}
       propertyPath: m_Name
+      value: CustomerDesireItemIndicator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399437400487412691, guid: 0afa613265c20534e93ab0115b10c900, type: 3}
+      propertyPath: m_TagString
       value: CustomerDesireItemIndicator
       objectReference: {fileID: 0}
     - target: {fileID: 2638250034440210893, guid: 0afa613265c20534e93ab0115b10c900, type: 3}

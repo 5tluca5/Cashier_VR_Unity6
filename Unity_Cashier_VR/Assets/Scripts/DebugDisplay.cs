@@ -57,6 +57,7 @@ public class DebugDisplay : MonoBehaviour
 
         display.text = displayText;
 
-        rectTransform.localPosition = new Vector3(0, rectTransform.sizeDelta.y * 0.5f, 0);
+        if(debugLogs.Count > 0)
+            rectTransform.localPosition = new Vector3(0, debugLogs.Count * 0.5f, 0);
     }
 }

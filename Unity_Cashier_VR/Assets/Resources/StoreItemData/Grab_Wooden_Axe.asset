@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6295a569783d0084b99305370ed161a0, type: 3}
   m_Name: Grab_Wooden_Axe
   m_EditorClassIdentifier: 
-  id: 100007
+  id: 100039
   itemName: Grab_Wooden_Axe
   itemPrefab: {fileID: 5885500355953779209, guid: 7ab38ceae550b174b801aff2d2efbc5d, type: 3}

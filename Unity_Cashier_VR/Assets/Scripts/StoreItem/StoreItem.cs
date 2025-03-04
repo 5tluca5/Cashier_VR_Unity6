@@ -7,19 +7,20 @@ public class StoreItem : MonoBehaviour
     public StoreItemData storeItemData;
     private HashSet<GameObject> collidingObjects = new HashSet<GameObject>();
 
+    Rigidbody rb;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnSelectEntered(SelectEnterEventArgs args)
     {
         
     }
 
-    public void OnReleasedFromGrab(SelectExitEventArgs args)
+    public void OnSelectExited(SelectExitEventArgs args)
     {
         if (collidingObjects.Count > 0)
         {
@@ -29,7 +30,7 @@ public class StoreItem : MonoBehaviour
 
                 if (obj.TryGetComponent(out RealCustomer realCustomer))
                 {
-
+                    realCustomer.CatchItem(this);
                 }
             }
         }
@@ -41,10 +42,17 @@ public class StoreItem : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         collidingObjects.Add(collision.gameObject);
+        Debug.Log($"{name} Collided with: {collision.gameObject.name}");
+
     }
 
     private void OnCollisionExit(Collision collision)
     {
         collidingObjects.Remove(collision.gameObject);
+        Debug.Log($"{name} Stopped colliding with: {collision.gameObject.name}");
     }
+
+    public bool SetKinematic(bool isKinematic) => rb.isKinematic = isKinematic;
+
+    public void AddForce(Vector3 force) => rb.AddForce(force);
 }

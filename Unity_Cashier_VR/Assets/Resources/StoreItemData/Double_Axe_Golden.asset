@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6295a569783d0084b99305370ed161a0, type: 3}
   m_Name: Double_Axe_Golden
   m_EditorClassIdentifier: 
-  id: 100005
+  id: 100037
   itemName: Double_Axe_Golden
   itemPrefab: {fileID: 4840764671706401134, guid: 29fc231ef44550240b6859357506ac2a, type: 3}
