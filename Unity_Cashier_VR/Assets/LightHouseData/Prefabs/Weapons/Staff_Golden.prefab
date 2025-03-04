@@ -62,6 +62,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ee73574496741e742b43b72b1928cd94, type: 3}
   m_PrefabInstance: {fileID: 3284898459624847696}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &4204066406499100116 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: ee73574496741e742b43b72b1928cd94, type: 3}
+  m_PrefabInstance: {fileID: 3284898459624847696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6372438929884536339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70,6 +75,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 295251374894455272, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 4204066406499100116}
     - target: {fileID: 2072803565416780760, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -112,7 +121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5150358144288620409, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_Name
-      value: Staff_Golden Variant
+      value: Staff_Golden
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

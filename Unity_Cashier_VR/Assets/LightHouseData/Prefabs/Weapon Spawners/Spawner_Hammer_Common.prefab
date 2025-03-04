@@ -72,7 +72,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 599493973071835825, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_Name
-      value: Spawner_Hammer_Common Variant
+      value: Spawner_Hammer_Common
       objectReference: {fileID: 0}
     - target: {fileID: 769848542351760687, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_LocalPosition.x
