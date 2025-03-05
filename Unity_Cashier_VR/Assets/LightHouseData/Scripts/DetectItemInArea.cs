@@ -1,10 +1,9 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DetectItemInArea : MonoBehaviour
 {
-    public event System.Action<Transform> OnItemEnter;
-    public event System.Action<Transform> OnItemExit;
+    public event System.Action<ItemCostData> OnItemEnter;
+    public event System.Action<ItemCostData> OnItemExit;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,7 +11,7 @@ public class DetectItemInArea : MonoBehaviour
         if (costData)
         {
             Debug.Log("Item entered: " + costData.transform);
-            OnItemEnter?.Invoke(costData.transform);
+            OnItemEnter?.Invoke(costData);
         }
     }
 
@@ -22,7 +21,7 @@ public class DetectItemInArea : MonoBehaviour
         if (costData)
         {
             Debug.Log("Item exited: " + costData.transform);
-            OnItemExit?.Invoke(costData.transform);
+            OnItemExit?.Invoke(costData);
         }
     }
 }
