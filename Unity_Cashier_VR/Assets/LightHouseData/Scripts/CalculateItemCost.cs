@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -77,6 +78,6 @@ public class CalculateItemCost : MonoBehaviour
     private void HandleUICanvas()
     {
         var alpha = itemsOnTableList.Count > 0 ? 1 : 0;
-        canvasGroup.alpha = alpha;
+        canvasGroup.DOFade(alpha, duration: 1f);
     }
 }
