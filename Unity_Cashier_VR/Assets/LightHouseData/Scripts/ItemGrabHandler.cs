@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class ItemThrowHandler : MonoBehaviour
+public class ItemGrabHandler : MonoBehaviour
 {
     private Rigidbody rb;
     private HashSet<GameObject> collidingObjects = new HashSet<GameObject>();
@@ -12,12 +12,12 @@ public class ItemThrowHandler : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    public void OnSelectEntered(SelectEnterEventArgs args)
+    public void OnSelectEntered(SelectEnterEventArgs selectArgs)
     {
         //rb.constraints = RigidbodyConstraints.None;
     }
 
-    public void OnSelectExited(SelectExitEventArgs args)
+    public void OnSelectExited(SelectExitEventArgs exitArgs)
     {
         //rb.constraints = RigidbodyConstraints.None;
     }
