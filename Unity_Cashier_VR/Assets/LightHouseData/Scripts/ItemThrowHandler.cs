@@ -14,12 +14,12 @@ public class ItemThrowHandler : MonoBehaviour
 
     public void OnSelectEntered(SelectEnterEventArgs args)
     {
-        rb.constraints = RigidbodyConstraints.None;
+        //rb.constraints = RigidbodyConstraints.None;
     }
 
     public void OnSelectExited(SelectExitEventArgs args)
     {
-        rb.constraints = RigidbodyConstraints.None;
+        //rb.constraints = RigidbodyConstraints.None;
     }
 
 }

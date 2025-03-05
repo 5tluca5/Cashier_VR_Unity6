@@ -1672,6 +1672,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 963275965072146022, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
+      propertyPath: m_ForceGravityOnDetach
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789575241779298310, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1679,6 +1683,10 @@ PrefabInstance:
     - target: {fileID: 5156322700652573233, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
       propertyPath: m_Name
       value: Weapon Racks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714018270307815142, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
+      propertyPath: m_Colliders.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5931639888824808806, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
       propertyPath: m_IsActive

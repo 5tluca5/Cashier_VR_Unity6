@@ -31,6 +31,7 @@ public class DebugDisplay : MonoBehaviour
         Application.logMessageReceived -= HandleLog;
     }
 
+    List<string> allLogs = new List<string>();
     void HandleLog(string logString, string stackTrace, LogType type)
     {
         if (type == LogType.Log)
@@ -44,20 +45,29 @@ public class DebugDisplay : MonoBehaviour
             else
                 debugLogs.Add(debugKey, debugValue);
 
+            allLogs.Add(logString);
         }
 
         string displayText = "";
-        foreach (KeyValuePair<string, string> log in debugLogs)
+        //foreach (KeyValuePair<string, string> log in debugLogs)
+        //{
+        //    if (log.Value == "")
+        //        displayText += log.Key + "\n";
+        //    else
+        //        displayText += log.Key + ": " + log.Value + "\n";
+        //}
+
+        foreach (string key in allLogs)
         {
-            if (log.Value == "")
-                displayText += log.Key + "\n";
-            else
-                displayText += log.Key + ": " + log.Value + "\n";
+            displayText += key + "\n";
         }
 
         display.text = displayText;
 
-        if(debugLogs.Count > 0)
-            rectTransform.localPosition = new Vector3(0, debugLogs.Count * 0.5f, 0);
+        //if(debugLogs.Count > 0)
+        //    rectTransform.localPosition = new Vector3(0, debugLogs.Count * 0.5f, 0);
+
+        if (allLogs.Count > 0)
+            rectTransform.localPosition = new Vector3(0, allLogs.Count * 0.5f, 0);
     }
 }

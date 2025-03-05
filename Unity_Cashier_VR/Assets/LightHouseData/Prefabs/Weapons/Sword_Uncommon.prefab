@@ -203,6 +203,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword_Uncommon
       objectReference: {fileID: 0}
+    - target: {fileID: 6102962112027492521, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102962112027492521, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_ThrowOnDetach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102962112027492521, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_Colliders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102962112027492521, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: 'm_Colliders.Array.data[0]'
+      value: 
+      objectReference: {fileID: 7345134122071136491}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7388881601163695646, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}

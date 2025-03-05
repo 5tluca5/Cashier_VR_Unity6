@@ -37,6 +37,8 @@ public class CustomerManager : MonoBehaviour
         SpawnCustomerProcedure();
     }
 
+    public RealCustomer GetRealCustomer() => realCustomer;
+
     private void SpawnCustomerProcedure()
     {
         if (spawnCustomers && customerPool.GetActiveObjectCount() < maxCustomerCount)

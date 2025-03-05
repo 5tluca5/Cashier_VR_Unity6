@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class StoreItem : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class StoreItem : MonoBehaviour
     private HashSet<GameObject> collidingObjects = new HashSet<GameObject>();
 
     Rigidbody rb;
-
+    XRGrabInteractable xR;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,40 +19,29 @@ public class StoreItem : MonoBehaviour
 
     public void OnSelectEntered(SelectEnterEventArgs args)
     {
-        
+        //rb.isKinematic = false;
+        GameController.Instance.SetGrabbingItem(this);
     }
 
     public void OnSelectExited(SelectExitEventArgs args)
     {
-        if (collidingObjects.Count > 0)
-        {
-            foreach (GameObject obj in collidingObjects)
-            {
-                Debug.Log($"Released while touching: {obj.name}");
-
-                if (obj.TryGetComponent(out RealCustomer realCustomer))
-                {
-                    realCustomer.CatchItem(this);
-                }
-            }
-        }
-        else
-        {
-            Debug.Log("Released in mid-air!");
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        collidingObjects.Add(collision.gameObject);
-        Debug.Log($"{name} Collided with: {collision.gameObject.name}");
-
+        //rb.isKinematic = false;
+        GameController.Instance.ReleaseGrabbingItem();
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        collidingObjects.Remove(collision.gameObject);
-        Debug.Log($"{name} Stopped colliding with: {collision.gameObject.name}");
-    }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    collidingObjects.Add(collision.gameObject);
+    //    Debug.Log($"{name} Collided with: {collision.gameObject.name}");
+
+    //}
+
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    collidingObjects.Remove(collision.gameObject);
+    //    Debug.Log($"{name} Stopped colliding with: {collision.gameObject.name}");
+    //}
 
     public bool SetKinematic(bool isKinematic) => rb.isKinematic = isKinematic;
 
