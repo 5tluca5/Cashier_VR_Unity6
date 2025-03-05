@@ -1,11 +1,9 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ItemGrabHandler : MonoBehaviour
 {
     private Rigidbody rb;
-    private HashSet<GameObject> collidingObjects = new HashSet<GameObject>();
 
     private void Awake()
     {
@@ -14,12 +12,12 @@ public class ItemGrabHandler : MonoBehaviour
 
     public void OnSelectEntered(SelectEnterEventArgs selectArgs)
     {
-        //rb.constraints = RigidbodyConstraints.None;
+        rb.constraints = RigidbodyConstraints.None;
     }
 
     public void OnSelectExited(SelectExitEventArgs exitArgs)
     {
-        //rb.constraints = RigidbodyConstraints.None;
+        rb.constraints = RigidbodyConstraints.None;
     }
 
 }
