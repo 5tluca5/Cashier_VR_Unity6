@@ -4,7 +4,9 @@ using UnityEditor;
 using System.Collections.Generic;
 using System.Linq;
 
+#if UNITY_EDITOR
 [Serializable, CreateAssetMenu(fileName = "StoreItemData", menuName = "Store Item Data")]
+#endif
 public class StoreItemData : ScriptableObject
 {
     [SerializeField] public int id;    // Unique identifier for the store item
@@ -41,10 +43,12 @@ public class StoreItemData : ScriptableObject
         return base.GetHashCode();
     }
 }
-
+#if UNITY_EDITOR
 public static class StoreItemDataTools
 {
+
     [MenuItem("Tools/StoreItem/Check duplicated IDs for Store Items")]
+
     public static void CheckDuplicatedIds()
     {
         // Find all StoreItemData assets in the project
@@ -79,8 +83,9 @@ public static class StoreItemDataTools
             Debug.Log("No duplicated IDs found for StoreItemData assets.");
         }
     }
-
+#if UNITY_EDITOR
     [MenuItem("Tools/StoreItem/Generate Unique IDs for Store Items")]
+#endif
     public static void GenerateUniqueIds()
     {
         // Find all StoreItemData assets in the project
@@ -109,6 +114,5 @@ public static class StoreItemDataTools
         // For example, you could use a static counter or a GUID
         return Guid.NewGuid().GetHashCode();
     }
-
-
 }
+#endif

@@ -75,6 +75,7 @@ public class ArrivalProcess : MonoBehaviour
         serviceTime = -Mathf.Log(1 - UnityEngine.Random.value) / simulationParameters.mu;
         yield return new WaitForSeconds(serviceTime);
         servicingCustomer.SetDestination(customerLeavePoint.position);
+        Destroy(servicingCustomer.gameObject, 20f);
         servicePointOccupied = false;
         servicingCustomer = null;
         serviceTime = 0;
