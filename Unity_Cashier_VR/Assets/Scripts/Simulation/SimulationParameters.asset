@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SimulationParameters
   m_EditorClassIdentifier: 
   SimulationName: 
-  TimeScale: 1
+  TimeScale: 10
   dt: 0.02
   StartTime: 0
   EndTime: 300
-  lambda: 0.9235809
+  lambda: 0.9235812
   mu: 0.7738607

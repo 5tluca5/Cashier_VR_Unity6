@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -13,6 +14,14 @@ public class ArrivalProcess : MonoBehaviour
     public Transform customerLeavePoint;
     public SimulationParameters simulationParameters;
     public Image progressBar;
+    public Slider timeScaleSlider;
+    public Slider lambdaSlider;
+    public Slider muSlider;
+    public TextMeshProUGUI timeScaleText;
+    public TextMeshProUGUI lambdaText;
+    public TextMeshProUGUI muText;
+
+
 
     public bool generateArrivals;
     public bool servicePointOccupied = false;
@@ -25,6 +34,13 @@ public class ArrivalProcess : MonoBehaviour
     
     void Start()
     {
+        lambdaSlider.value = simulationParameters.lambda;
+        muSlider.value = simulationParameters.mu;
+        timeScaleSlider.value = Time.timeScale;
+        timeScaleText.text = timeScaleSlider.value.ToString();
+        lambdaText.text = lambdaSlider.value.ToString();
+        muText.text = muSlider.value.ToString();
+        
         StartCoroutine(GenerateArrivals());
     }
 
@@ -107,5 +123,23 @@ public class ArrivalProcess : MonoBehaviour
             progressBar.fillAmount = 0;
             serviceTimer = 0;
         }
+    }
+
+    public void ChangeTimeScale()
+    {
+        Time.timeScale = timeScaleSlider.value;
+        timeScaleText.text = timeScaleSlider.value.ToString();
+    }
+
+    public void ChangeLambda()
+    {
+        simulationParameters.lambda = lambdaSlider.value;
+        lambdaText.text = lambdaSlider.value.ToString();
+    }
+
+    public void ChangeMu()
+    {
+        simulationParameters.mu = muSlider.value;
+        muText.text = muSlider.value.ToString();
     }
 }
