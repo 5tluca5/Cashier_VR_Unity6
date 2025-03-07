@@ -1720,7 +1720,7 @@ PrefabInstance:
       objectReference: {fileID: 1928768613}
     - target: {fileID: 8995993870543064991, guid: 98a4193f3974c4561b801f297a02be32, type: 3}
       propertyPath: m_VersionIndex
-      value: 4179
+      value: 5598
       objectReference: {fileID: 0}
     - target: {fileID: 9013866835852158105, guid: 98a4193f3974c4561b801f297a02be32, type: 3}
       propertyPath: m_Mesh
@@ -2145,7 +2145,7 @@ PrefabInstance:
     - target: {fileID: 3393002763066289957, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
       propertyPath: prefabToSpawn
       value: 
-      objectReference: {fileID: 4815833098813779181, guid: 26a041652e5946549847e2707350c347, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5156322700652573233, guid: c52753283bd5248d3915f5593c8000a9, type: 3}
       propertyPath: m_Name
       value: Weapon Racks
