@@ -1,29 +1,32 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] private float spawnTime;
-    [SerializeField] private GameObject prefabToSpawn;
     [SerializeField] private Transform spawnLocation;
+    [SerializeField] private ItemGrabHandler prefabToSpawn;
+    [SerializeField] private XRSocketInteractor socketInteractor;
 
     [SerializeField] private Image progressBarImage;
 
     private float currentSpawnTime;
-    private bool hasItem = true;
+    [SerializeField] private ItemGrabHandler spawnedItem;
 
     private void Start()
     {
         progressBarImage.fillAmount = 0;
+        spawnedItem = GetComponentInChildren<ItemGrabHandler>();
+        AttachToSocket();
     }
 
     private void Update()
     {
-        if (spawnLocation.childCount == 0)
+        if (!socketInteractor.hasSelection)
         {
-            hasItem = false;
             currentSpawnTime += Time.deltaTime;
             progressBarImage.fillAmount = currentSpawnTime / spawnTime;
             if (currentSpawnTime > spawnTime)
@@ -37,10 +40,15 @@ public class ItemSpawner : MonoBehaviour
 
     private void SpawnItem()
     {
-        // If we already have item then we don't do anything
-        if (hasItem) return;
+        if (spawnedItem != null) return;
 
-        var spawnedItem = Instantiate(prefabToSpawn, spawnLocation);
-        hasItem = true;
+        spawnedItem = Instantiate(prefabToSpawn, spawnLocation);
+        AttachToSocket();
+    }
+
+    private void AttachToSocket()
+    {
+        IXRSelectInteractable interactable = spawnedItem.GetComponent<IXRSelectInteractable>();
+        socketInteractor.StartManualInteraction(interactable);
     }
 }

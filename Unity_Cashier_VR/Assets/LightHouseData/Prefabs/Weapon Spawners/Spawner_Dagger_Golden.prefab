@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 599493973071835825, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_Name
-      value: Spawner_Dagger_Rare Variant
+      value: Spawner_Dagger_Golden
       objectReference: {fileID: 0}
     - target: {fileID: 769848542351760687, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2492744826996580596, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_StartingSelectedInteractable
+      value: 
+      objectReference: {fileID: 1511532664573635120}
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 
@@ -126,6 +130,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f860fad2e05d3d6479065be74005c904, type: 3}
+--- !u!114 &1511532664573635120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4476427494632265577, guid: f860fad2e05d3d6479065be74005c904, type: 3}
+  m_PrefabInstance: {fileID: 3091015145688055129}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6668716812328909121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8532482352761046040, guid: f860fad2e05d3d6479065be74005c904, type: 3}
