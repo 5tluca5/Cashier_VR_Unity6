@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2492744826996580596, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_StartingSelectedInteractable
+      value: 
+      objectReference: {fileID: 2231721679909881106}
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 
@@ -154,6 +158,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a48d646b3f9294ebe54bb7a5883f96, type: 3}
+--- !u!114 &2231721679909881106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5431729730573762243, guid: b5a48d646b3f9294ebe54bb7a5883f96, type: 3}
+  m_PrefabInstance: {fileID: 6168183688566143953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6237110978871596643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 222753366219124146, guid: b5a48d646b3f9294ebe54bb7a5883f96, type: 3}

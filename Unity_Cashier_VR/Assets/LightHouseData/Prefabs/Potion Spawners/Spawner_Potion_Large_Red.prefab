@@ -62,6 +62,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8760838045711683248, guid: f9a6790a2281f3d4093b5cacba01e0d5, type: 3}
   m_PrefabInstance: {fileID: 6175189540989313130}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7228296687724985771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3594646154322304449, guid: f9a6790a2281f3d4093b5cacba01e0d5, type: 3}
+  m_PrefabInstance: {fileID: 6175189540989313130}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7375516038156509009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +141,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2492744826996580596, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_StartingSelectedInteractable
+      value: 
+      objectReference: {fileID: 7228296687724985771}
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 
