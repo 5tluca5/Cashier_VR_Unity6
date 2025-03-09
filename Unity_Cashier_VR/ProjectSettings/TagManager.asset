@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - CustomerDesireItemIndicator
+  - A
   layers:
   - Default
   - TransparentFX
