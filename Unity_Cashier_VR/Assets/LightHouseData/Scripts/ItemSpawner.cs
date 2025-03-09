@@ -8,18 +8,18 @@ public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] private float spawnTime;
     [SerializeField] private Transform spawnLocation;
-    [SerializeField] private ItemGrabHandler prefabToSpawn;
+    [SerializeField] private XRGrabInteractable prefabToSpawn;
     [SerializeField] private XRSocketInteractor socketInteractor;
 
     [SerializeField] private Image progressBarImage;
 
     private float currentSpawnTime;
-    [SerializeField] private ItemGrabHandler spawnedItem;
+    [SerializeField] private XRGrabInteractable spawnedItem;
 
     private void Start()
     {
         progressBarImage.fillAmount = 0;
-        spawnedItem = GetComponentInChildren<ItemGrabHandler>();
+        spawnedItem = GetComponentInChildren<XRGrabInteractable>();
         AttachToSocket();
     }
 

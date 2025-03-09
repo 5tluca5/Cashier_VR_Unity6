@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 599493973071835825, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_Name
-      value: Spawner_Golden_Axe
+      value: Spawner_Axe_Golden
       objectReference: {fileID: 0}
     - target: {fileID: 769848542351760687, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 
-      objectReference: {fileID: 5689978571006309037, guid: ca3d8ff93e28b4747aced77ed0f00997, type: 3}
+      objectReference: {fileID: 6718651118452706685, guid: ca3d8ff93e28b4747aced77ed0f00997, type: 3}
     - target: {fileID: 3126801613888294817, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0

@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 5142036707974363009}
   - component: {fileID: 6102962112027492521}
   - component: {fileID: 1986717596866046316}
-  - component: {fileID: 3478055256805012025}
   - component: {fileID: 5005681501649160168}
   - component: {fileID: 1009523207640121983}
   m_Layer: 8
@@ -146,18 +145,6 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3478055256805012025}
-        m_TargetAssemblyTypeName: ItemThrowHandler, Assembly-CSharp
-        m_MethodName: OnSelectEntered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
       - m_Target: {fileID: 5005681501649160168}
         m_TargetAssemblyTypeName: StoreItem, Assembly-CSharp
         m_MethodName: OnSelectEntered
@@ -173,18 +160,6 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3478055256805012025}
-        m_TargetAssemblyTypeName: ShieldGrabRotationCorrector, Assembly-CSharp
-        m_MethodName: OnSelectExited
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
       - m_Target: {fileID: 5005681501649160168}
         m_TargetAssemblyTypeName: StoreItem, Assembly-CSharp
         m_MethodName: OnSelectExited
@@ -300,18 +275,6 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
---- !u!114 &3478055256805012025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5150358144288620409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a29b20063afb0b54da05a26a3feb66a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5005681501649160168
 MonoBehaviour:
   m_ObjectHideFlags: 0
