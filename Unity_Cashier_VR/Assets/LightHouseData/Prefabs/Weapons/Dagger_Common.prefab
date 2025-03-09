@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3773847949001130775}
   - component: {fileID: 2722114613569318595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,6 +125,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5005681501649160168, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: storeItemData
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5150358144288620409, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_Name
       value: Dagger_Common
@@ -193,6 +197,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 61d9f9f94af76ea438b25141897ab747, type: 3}
       propertyPath: m_Name
       value: dagger_common
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61d9f9f94af76ea438b25141897ab747, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

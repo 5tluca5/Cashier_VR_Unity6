@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2443778520114908387}
   - component: {fileID: 7168042908337458169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7950300805661775893}
   - component: {fileID: 6170232178551831333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,6 +157,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c5d5e9dc802e7842ac596b07bd27ff1, type: 3}
       propertyPath: m_Name
       value: crossbow_common
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c5d5e9dc802e7842ac596b07bd27ff1, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -262,6 +266,10 @@ PrefabInstance:
     - target: {fileID: 2072803565416780760, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005681501649160168, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: storeItemData
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5150358144288620409, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_Name

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4515178204865949407}
   - component: {fileID: 4755116745461910345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6111470978583500464}
   - component: {fileID: 7856850682266860633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5a3b8cb0d5538614a87ad902c7d3afc3, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

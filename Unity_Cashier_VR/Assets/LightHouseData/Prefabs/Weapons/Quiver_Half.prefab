@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3574322337262514159}
   - component: {fileID: 3503619204516013758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,6 +113,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5005681501649160168, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: storeItemData
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5150358144288620409, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_Name
       value: Quiver_Half
@@ -181,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 41ede58e7cc83ed4fbd94fa0cc9b80e6, type: 3}
       propertyPath: m_Name
       value: quiver_half_full
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 41ede58e7cc83ed4fbd94fa0cc9b80e6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
