@@ -57,17 +57,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10cc92f2e54f4da4f9c108c56854b61b, type: 3}
---- !u!114 &4226928420316784334 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1005412101705628039, guid: 10cc92f2e54f4da4f9c108c56854b61b, type: 3}
-  m_PrefabInstance: {fileID: 3988748883864248137}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8277353779431060927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5009674671311776502, guid: 10cc92f2e54f4da4f9c108c56854b61b, type: 3}
@@ -125,10 +114,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2492744826996580596, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
-      propertyPath: m_StartingSelectedInteractable
-      value: 
-      objectReference: {fileID: 4226928420316784334}
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 
