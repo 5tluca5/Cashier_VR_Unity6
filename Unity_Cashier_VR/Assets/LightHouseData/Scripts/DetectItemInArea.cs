@@ -19,14 +19,14 @@ public class DetectItemInArea : MonoBehaviour
         ItemCostData costData = other.transform.GetComponentInParent<ItemCostData>();
         if (costData)
         {
-            Debug.Log("Item entered: " + costData.transform);
+            //Debug.Log("Item entered: " + costData.transform);
             OnItemEnter?.Invoke(costData);
         }
 
         var requestData = other.GetComponentInParent<CustomerRequest>();
         if (requestData)
         {
-            Debug.Log("Customer entered: " + requestData.transform);
+            //Debug.Log("Customer entered: " + requestData.transform);
             OnCustomerEnter?.Invoke(requestData);
         }
     }
@@ -36,14 +36,14 @@ public class DetectItemInArea : MonoBehaviour
         ItemCostData costData = other.transform.GetComponentInParent<ItemCostData>();
         if (costData)
         {
-            Debug.Log("Item exited: " + costData.transform);
+            //Debug.Log("Item exited: " + costData.transform);
             OnItemExit?.Invoke(costData);
         }
 
         var requestData = other.GetComponentInParent<CustomerRequest>();
         if (requestData)
         {
-            Debug.Log("Customer exited: " + requestData.transform);
+            //Debug.Log("Customer exited: " + requestData.transform);
             OnCustomerExit?.Invoke(requestData);
         }
     }

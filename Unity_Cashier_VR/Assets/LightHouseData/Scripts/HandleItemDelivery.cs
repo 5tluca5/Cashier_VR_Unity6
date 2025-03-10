@@ -83,16 +83,15 @@ public class HandleItemDelivery : MonoBehaviour
         HandleUICanvas();
     }
 
-    [Header("DEBUG ONLY")]
-    [SerializeField]
-    private List<ItemCostData> deliverableItemsList = new();
+    //[Header("DEBUG ONLY")]
+    //[SerializeField] private List<ItemCostData> deliverableItemsList = new();
     private void CheckForDelivery()
     {
         bool isReadyForDelivery = false;
 
         CustomerRequestData deliveryRequest = default;
-        //List<ItemCostData> deliverableItemsList = new();
-        deliverableItemsList.Clear(); // Clear deliverable items list // When Debugging
+        List<ItemCostData> deliverableItemsList = new();
+        //deliverableItemsList.Clear(); // Clear deliverable items list // When Debugging
 
         foreach (var customerRequest in customerRequestsList)
         {
@@ -103,7 +102,7 @@ public class HandleItemDelivery : MonoBehaviour
                 {
                     isReadyForDelivery = false; // If item is not on table, break the loop
                     itemsOnTableList.AddRange(deliverableItemsList); // Add deliverable items back to table
-                    //deliverableItemsList.Clear(); // Clear deliverable items list // When not Debugging
+                    deliverableItemsList.Clear(); // Clear deliverable items list // When not Debugging
                     break;
                 }
 
@@ -115,7 +114,7 @@ public class HandleItemDelivery : MonoBehaviour
             }
             if (isReadyForDelivery)
             {
-                Debug.Log("Ready for delivery with ID: " + customerRequest.GetRequestID());
+                //Debug.Log("Ready for delivery with ID: " + customerRequest.GetRequestID());
                 deliveryRequest = customerRequest; // Set delivery request for deletion as we can't delete from list while iterating
                 break;
             }

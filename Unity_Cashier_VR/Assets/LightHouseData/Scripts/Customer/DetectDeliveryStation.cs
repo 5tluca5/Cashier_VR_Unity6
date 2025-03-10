@@ -32,7 +32,7 @@ public class DetectDeliveryStation : MonoBehaviour
         if (!detectionCollider.enabled) return;
 
         var deliveryStation = other.GetComponentInParent<HandleItemDelivery>();
-        Debug.Log("Delivery station entered: " + deliveryStation);
+        //Debug.Log("Delivery station entered: " + deliveryStation);
         if (deliveryStation && currentDelieveryStation != deliveryStation)
         {
             currentDelieveryStation = deliveryStation;
@@ -46,7 +46,7 @@ public class DetectDeliveryStation : MonoBehaviour
         if (!detectionCollider.enabled) return;
 
         var deliveryStation = other.GetComponentInParent<HandleItemDelivery>();
-        Debug.Log("Delivery station exited: " + deliveryStation);
+        //Debug.Log("Delivery station exited: " + deliveryStation);
         if (currentDelieveryStation == deliveryStation)
         {
             currentDelieveryStation = null;
