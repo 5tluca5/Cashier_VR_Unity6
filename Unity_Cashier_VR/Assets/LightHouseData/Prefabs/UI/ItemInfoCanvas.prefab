@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 6551581473681120534}
   - component: {fileID: 250000506047284647}
   - component: {fileID: 1704177747959612876}
-  m_Layer: 5
-  m_Name: Detection Area
+  m_Layer: 0
+  m_Name: Item Detection Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,7 +253,11 @@ MonoBehaviour:
   totalCost: 0
   titleText: {fileID: 2892987522571698549}
   priceText: {fileID: 6407338561255925846}
+  detectItem: {fileID: 1704177747959612876}
+  detectCustomer: {fileID: 0}
   itemsOnTableList: []
+  customerRequestsList: []
+  deliverableItemsList: []
 --- !u!1 &2775483467568397313
 GameObject:
   m_ObjectHideFlags: 0

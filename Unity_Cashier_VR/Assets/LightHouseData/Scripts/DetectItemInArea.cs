@@ -1,9 +1,18 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class DetectItemInArea : MonoBehaviour
 {
     public event System.Action<ItemCostData> OnItemEnter;
     public event System.Action<ItemCostData> OnItemExit;
+
+    public event System.Action<CustomerRequest> OnCustomerEnter;
+    public event System.Action<CustomerRequest> OnCustomerExit;
+
+    private void Awake()
+    {
+        GetComponent<Collider>().isTrigger = true;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,6 +21,13 @@ public class DetectItemInArea : MonoBehaviour
         {
             Debug.Log("Item entered: " + costData.transform);
             OnItemEnter?.Invoke(costData);
+        }
+
+        var requestData = other.GetComponentInParent<CustomerRequest>();
+        if (requestData)
+        {
+            Debug.Log("Customer entered: " + requestData.transform);
+            OnCustomerEnter?.Invoke(requestData);
         }
     }
 
@@ -23,5 +39,13 @@ public class DetectItemInArea : MonoBehaviour
             Debug.Log("Item exited: " + costData.transform);
             OnItemExit?.Invoke(costData);
         }
+
+        var requestData = other.GetComponentInParent<CustomerRequest>();
+        if (requestData)
+        {
+            Debug.Log("Customer exited: " + requestData.transform);
+            OnCustomerExit?.Invoke(requestData);
+        }
     }
+
 }
