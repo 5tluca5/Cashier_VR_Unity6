@@ -19,6 +19,27 @@ MonoBehaviour:
     silhouette: {fileID: 4800000, guid: 2a1be836d8f24bbb91714e9a51f8fec1, type: 3}
     silhouetteInstanced: {fileID: 4800000, guid: 85d004b6af6cd48209d21826b2f0a5a3, type: 3}
     outline: {fileID: 4800000, guid: 90865e175cad4ccd80a2e1965c38f3e9, type: 3}
+--- !u!114 &-4897046994447776973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1614fc811f8f184697d9bee70ab9fe5, type: 3}
+  m_Name: DecalRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_Settings:
+    technique: 0
+    maxDrawDistance: 1000
+    decalLayers: 0
+    dBufferSettings:
+      surfaceData: 2
+    screenSpaceSettings:
+      normalBlend: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +69,8 @@ MonoBehaviour:
   - {fileID: -6902614349034998703}
   - {fileID: 2807639514057233460}
   - {fileID: 6238139626783528709}
-  m_RendererFeatureMap: ad6b866f10d7b46c51344138d2fc34a03454bb3443bdf6260557b881f0529256
+  - {fileID: -4897046994447776973}
+  m_RendererFeatureMap: ad6b866f10d7b46c51344138d2fc34a03454bb3443bdf6260557b881f052925633c38b47b4310abc
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
