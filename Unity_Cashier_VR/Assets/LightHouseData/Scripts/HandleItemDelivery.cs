@@ -7,8 +7,10 @@ public class HandleItemDelivery : MonoBehaviour
 {
     [Header("Cost Data")]
     [SerializeField] private float totalCost;
+    [SerializeField] private GameObject coinPrefab;
+    [SerializeField] private Transform coinSpawnPoint;
 
-    [Header("UI settings")]
+    [Header("UI settings")] // JD: I want to move UI part to its own script to seperate UI and Logic, yet that's the problem for future JD.
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private TextMeshProUGUI priceText;
     private CanvasGroup canvasGroup;
@@ -84,13 +86,14 @@ public class HandleItemDelivery : MonoBehaviour
     }
 
     //[Header("DEBUG ONLY")]
-    //[SerializeField] private List<ItemCostData> deliverableItemsList = new();
+    //[SerializeField] private List<ItemCostData> deliverableItemsList = new(); // when Debugging
     private void CheckForDelivery()
     {
+        int cost = 0;
         bool isReadyForDelivery = false;
 
         CustomerRequestData deliveryRequest = default;
-        List<ItemCostData> deliverableItemsList = new();
+        List<ItemCostData> deliverableItemsList = new(); // When not Debugging
         //deliverableItemsList.Clear(); // Clear deliverable items list // When Debugging
 
         foreach (var customerRequest in customerRequestsList)
@@ -108,6 +111,8 @@ public class HandleItemDelivery : MonoBehaviour
 
                 var delivrableItem = itemsOnTableList.Find(x => x.Id == item.GetItemID()); // Find deliverable item
                 deliverableItemsList.Add(delivrableItem); // Add deliverable item to list
+                cost += delivrableItem.Cost; // Add cost of deliverable item to total cost
+
                 // Remove deliverable item from table so duplicate items are not counted.
                 // eg. suppose Axe has Id 1001 then it should be removed from list, so next time the other Axe with Id 1001 is added to the delivery list.
                 itemsOnTableList.Remove(delivrableItem);
@@ -123,8 +128,20 @@ public class HandleItemDelivery : MonoBehaviour
         if (isReadyForDelivery)
         {
             customerRequestsList.Remove(deliveryRequest); // Remove delivery request from list
-            deliverableItemsList.ForEach(x => Destroy(x.gameObject)); // Destroy deliverable items
+            SpawnCoins(cost);
+            deliverableItemsList.ForEach(x => x.transform.localScale = Vector3.one * .25f); // Destroy deliverable items
             OnDeliveryComplete?.Invoke(); // Invoke delivery complete event
+        }
+    }
+
+    private void SpawnCoins(int cost)
+    {
+        int spawnCount = Mathf.CeilToInt(cost / 5);
+        Debug.Log("Spawn Count: " + spawnCount);
+        for (int i = 0; i < spawnCount; i++)
+        {
+            var spawnPosition = coinSpawnPoint.position + new Vector3(Random.Range(-1f, 1f), Random.Range(0f, 2f), Random.Range(-.5f, .5f));
+            var coin = Instantiate(coinPrefab, spawnPosition, Quaternion.identity, coinSpawnPoint);
         }
     }
 

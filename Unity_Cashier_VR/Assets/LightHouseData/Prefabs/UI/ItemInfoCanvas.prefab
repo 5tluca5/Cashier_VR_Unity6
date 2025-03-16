@@ -156,6 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 2179132520233109062}
   - {fileID: 8206402865052342151}
+  - {fileID: 4145922829701013353}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -251,13 +252,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalCost: 0
+  coinPrefab: {fileID: 8018432688725787383, guid: be383adc93bfc9c4aad41198838a4ea6, type: 3}
+  coinSpawnPoint: {fileID: 4145922829701013353}
   titleText: {fileID: 2892987522571698549}
   priceText: {fileID: 6407338561255925846}
   detectItem: {fileID: 1704177747959612876}
-  detectCustomer: {fileID: 0}
   itemsOnTableList: []
   customerRequestsList: []
-  deliverableItemsList: []
 --- !u!1 &2775483467568397313
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,3 +698,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 1
+--- !u!1 &8211851014291115713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4145922829701013353}
+  m_Layer: 0
+  m_Name: CoinSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4145922829701013353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211851014291115713}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7220468736060795692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
