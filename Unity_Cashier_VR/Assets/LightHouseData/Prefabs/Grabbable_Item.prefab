@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 6102962112027492521}
   - component: {fileID: 1986717596866046316}
   - component: {fileID: 1009523207640121983}
+  - component: {fileID: 1749699334128763834}
   m_Layer: 8
   m_Name: Grabbable_Item
   m_TagString: Untagged
@@ -143,34 +144,10 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StoreItem, Assembly-CSharp
-        m_MethodName: OnSelectEntered
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StoreItem, Assembly-CSharp
-        m_MethodName: OnSelectExited
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -288,6 +265,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 10
   <Id>k__BackingField: 0
+--- !u!114 &1749699334128763834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5150358144288620409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03df1d3a09b708143ae521f35491e517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTag: 0
 --- !u!1 &5228756136859686457
 GameObject:
   m_ObjectHideFlags: 0
