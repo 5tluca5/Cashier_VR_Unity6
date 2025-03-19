@@ -62,17 +62,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3752723474001215909, guid: 9a74f693a6fc400458e07503b9e171a8, type: 3}
   m_PrefabInstance: {fileID: 1612246186737191095}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7655419151471319651 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8962825667395277524, guid: 9a74f693a6fc400458e07503b9e171a8, type: 3}
-  m_PrefabInstance: {fileID: 1612246186737191095}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6649646194775397758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125,10 +114,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2492744826996580596, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
-      propertyPath: m_StartingSelectedInteractable
-      value: 
-      objectReference: {fileID: 7655419151471319651}
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 

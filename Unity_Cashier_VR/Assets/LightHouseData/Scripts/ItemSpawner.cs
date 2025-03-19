@@ -25,6 +25,7 @@ public class ItemSpawner : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(socketInteractor.hasSelection);
         if (!socketInteractor.hasSelection)
         {
             currentSpawnTime += Time.deltaTime;

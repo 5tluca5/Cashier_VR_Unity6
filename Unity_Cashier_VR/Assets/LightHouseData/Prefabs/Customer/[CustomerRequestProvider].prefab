@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &353654486631559633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8589375887227675105}
+  - component: {fileID: 3412063267506111093}
+  m_Layer: 0
+  m_Name: '[CustomerRequestProvider]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8589375887227675105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353654486631559633}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3412063267506111093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353654486631559633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1596b09a4e67bb41833729c3c3602f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requestableItems:
+  - {fileID: 11400000, guid: a5d2b2ec76d80424885c3f221577c489, type: 2}
+  - {fileID: 11400000, guid: 2a1ebea2bb7eb754ba99459d87623547, type: 2}
+  - {fileID: 11400000, guid: 6f5b1820ea3de8e47bd5455eb64727d0, type: 2}
+  - {fileID: 11400000, guid: 3f1907d1b08def6469de97540ce358ef, type: 2}
+  - {fileID: 11400000, guid: c6ddf8af790f050498d4afe02cc59597, type: 2}
+  - {fileID: 11400000, guid: 4c1c623ebb97a5e47942a985c7baef30, type: 2}
+  - {fileID: 11400000, guid: a39c8af690d12a4458fc656133bd33c5, type: 2}
+  - {fileID: 11400000, guid: 507a53475fbda9345b780923d27c9cb0, type: 2}
+  - {fileID: 11400000, guid: fec458c947265d141910f0c2f8cefd43, type: 2}
+  - {fileID: 11400000, guid: 67b6685acccb9734aaa584bfa70ed42f, type: 2}
+  - {fileID: 11400000, guid: a03cb16d85dc86f48afcb0d841b473bb, type: 2}
+  - {fileID: 11400000, guid: 064b4395f4155914e8fa5dcf840c8f99, type: 2}
+  - {fileID: 11400000, guid: c74b459bf900ef74abea2729b4ccea41, type: 2}
+  - {fileID: 11400000, guid: 212136c8f48a4734ab135a8f95aa321d, type: 2}
+  - {fileID: 11400000, guid: 6dd76bc2f05b3bf46a0acf4488cc4188, type: 2}
+  - {fileID: 11400000, guid: d32a2b4e309a0b049aab9a5136d92fcb, type: 2}
+  - {fileID: 11400000, guid: 64c714115d56e86499193bdfd4b83ee5, type: 2}
+  - {fileID: 11400000, guid: 90a2a542d24a72f42986dd6fba36de5d, type: 2}
+  - {fileID: 11400000, guid: 058047c7b9ddaa44d98ee4f2df750172, type: 2}
+  - {fileID: 11400000, guid: beef36f12ab22cd478c947c09f3bb352, type: 2}
+  - {fileID: 11400000, guid: 4da4fcff923be4c409c7c111f8be1d71, type: 2}
+  - {fileID: 11400000, guid: 964cc59d7d45dcb48888a91004536d7d, type: 2}
+  - {fileID: 11400000, guid: 243cc694e902bcd45a9a6bf85130f235, type: 2}
+  - {fileID: 11400000, guid: ed75860a8b9b32d4994923830ab68d69, type: 2}
+  - {fileID: 11400000, guid: 89e8a71fe28fd444389a6a4c4fa04ce2, type: 2}
+  - {fileID: 11400000, guid: 08e12cf705652fb419f391ab3459d390, type: 2}
+  - {fileID: 11400000, guid: 7fb0886b98e11f44e9c6a501dd98b8dd, type: 2}
+  - {fileID: 11400000, guid: bf802212af1344f46b8bdcb22e22a69c, type: 2}
+  - {fileID: 11400000, guid: 2dedba2681259e24eafd2ef5a07a11eb, type: 2}
+  - {fileID: 11400000, guid: f00a90a57316efc4eac03fbbf021c0ec, type: 2}
+  - {fileID: 11400000, guid: 5e6eee22abf4bba4eacec33cd0b3eb26, type: 2}
+  - {fileID: 11400000, guid: 0d23fd4e069099b4380035dea942b511, type: 2}
+  - {fileID: 11400000, guid: df6ccc8857ad2884faf07a308254ef94, type: 2}
+  - {fileID: 11400000, guid: 30df2a36af350e848a992fa8f60f374a, type: 2}
+  - {fileID: 11400000, guid: 5f538fa1b147c244c9a324d07ddda35f, type: 2}
+  - {fileID: 11400000, guid: ee19266810c11f042813cb551a0f2cd2, type: 2}
+  - {fileID: 11400000, guid: 45e5dd6f8668e7e45845b05713ecd402, type: 2}
