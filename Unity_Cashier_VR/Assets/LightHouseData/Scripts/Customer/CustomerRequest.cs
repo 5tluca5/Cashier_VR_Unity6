@@ -4,13 +4,13 @@ using UnityEngine;
 public class CustomerRequest : MonoBehaviour
 {
     [SerializeField] private CustomerRequestData customerRequestData;
+    [SerializeField] private int Max_Requests = 8;
 
     public System.Action<CustomerRequestData> OnRequestedItemsListCompleted;
     public System.Action OnRequestedItemsInitilized;
 
     private void Start()
     {
-        const int Max_Requests = 8;
         var randomNumber = Random.Range(1, Max_Requests + 1);
 
         customerRequestData.SetRequestID(CustomerRequestProvider.Instance.GetRequestID());
