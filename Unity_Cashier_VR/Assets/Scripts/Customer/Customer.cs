@@ -11,6 +11,7 @@ public enum CustomerBehaviour
     LookingUp,
     LookingAround,
     Sitting,
+    SelectingItems,
     CheckingOut,
     Leaving
 }
@@ -246,6 +247,9 @@ public class Customer : MonoBehaviour
             case CustomerBehaviour.Leaving:
                 Leaving();
                 break;
+            case CustomerBehaviour.SelectingItems:
+                // TODO: Select items on table
+                break;
             case CustomerBehaviour.CheckingOut:
                 Checkout();
                 break;
@@ -260,5 +264,11 @@ public class Customer : MonoBehaviour
     virtual protected void Checkout()
     {
 
+    }
+
+    public void LeaveStore()
+    {
+        //Debug.Log(name + "Leaving store");
+        SetDestination(pathPoints[pathPoints.Count - 1]).ToObservable().Subscribe();
     }
 }

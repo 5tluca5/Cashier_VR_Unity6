@@ -263,11 +263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pro: {fileID: 1684720142}
   _par: {fileID: 2106418143}
---- !u!4 &491903151 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8962023668224593890, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-  m_PrefabInstance: {fileID: 1247440539917657206}
-  m_PrefabAsset: {fileID: 0}
+  _defaultLifetime: 5
+  _defaultColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!114 &558026155 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4377217251678871632, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
@@ -1666,53 +1663,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1935237310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1935237311}
-  - component: {fileID: 1935237312}
-  m_Layer: 0
-  m_Name: RealCustomerPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1935237311
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935237310}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 491903151}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1935237312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935237310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93a709e772eba485eba5f8c3895c97ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfInitialize: 0
-  prefab: {fileID: 358495811507217724, guid: 29d73210b3c81ab4291d294d2b868f06, type: 3}
-  poolSize: 3
 --- !u!1 &2106418140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6694,33 +6644,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 31836601377606012, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.75
-      objectReference: {fileID: 0}
     - target: {fileID: 2063884282786363237, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
       propertyPath: realCustomer
       value: 
       objectReference: {fileID: 1170071539}
-    - target: {fileID: 2063884282786363237, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-      propertyPath: spawnCustomers
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2290225376730483779, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
       propertyPath: m_Name
       value: Customer-Related
-      objectReference: {fileID: 0}
-    - target: {fileID: 3566052784371326221, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4235672098776073303, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: 836cfdd6fdd8e4c01aafb38a3ccde4b5, type: 2}
-    - target: {fileID: 4377217251678871632, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-      propertyPath: 'posibleBehaviours.Array.data[0]'
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8962023668224593890, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6764,10 +6694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8962023668224593890, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 1935237311}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
 --- !u!114 &1247440539917657207 stripped
