@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a664f2495ab814999438a4e7018680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grabInteractable: {fileID: 0}
+  coinPouchSocketInteractor: {fileID: 0}
   coinCount: 0
 --- !u!1001 &7732088465498197290
 PrefabInstance:
@@ -640,10 +640,6 @@ PrefabInstance:
     - target: {fileID: 5150358144288620409, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_Name
       value: Coin_Pouch
-      objectReference: {fileID: 0}
-    - target: {fileID: 6102962112027492521, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
-      propertyPath: m_ThrowOnDetach
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6102962112027492521, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_InteractionLayers.m_Bits

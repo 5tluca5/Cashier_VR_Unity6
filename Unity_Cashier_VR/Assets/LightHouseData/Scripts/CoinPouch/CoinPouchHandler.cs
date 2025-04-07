@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 [RequireComponent(typeof(Collider))]
 public class CoinPouchHandler : MonoBehaviour
 {
-    [SerializeField] private XRSocketInteractor grabInteractable;
+    [SerializeField] private XRSocketInteractor coinPouchSocketInteractor;
 
     [SerializeField] private int coinCount;
 
@@ -16,14 +16,14 @@ public class CoinPouchHandler : MonoBehaviour
     private void Awake()
     {
         GetComponent<Collider>().isTrigger = true;
-        grabInteractable.selectEntered.AddListener(OnPouchDropped);
-        grabInteractable.selectExited.AddListener(OnPouchPickedUp);
+        coinPouchSocketInteractor.selectEntered.AddListener(OnPouchDropped);
+        coinPouchSocketInteractor.selectExited.AddListener(OnPouchPickedUp);
     }
 
     private void OnDestroy()
     {
-        grabInteractable.selectEntered.RemoveListener(OnPouchDropped);
-        grabInteractable.selectExited.RemoveListener(OnPouchPickedUp);
+        coinPouchSocketInteractor.selectEntered.RemoveListener(OnPouchDropped);
+        coinPouchSocketInteractor.selectExited.RemoveListener(OnPouchPickedUp);
     }
 
     private void OnPouchDropped(SelectEnterEventArgs eventArgs)

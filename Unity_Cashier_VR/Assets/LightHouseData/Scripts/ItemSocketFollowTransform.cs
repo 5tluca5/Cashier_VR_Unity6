@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ItemSocketFollowTransform : MonoBehaviour
 {
-    [SerializeField] private GameObject HMD;
+    [SerializeField] private Transform HMD;
     [SerializeField] private bool followPosition = true;
     [SerializeField] private bool followRotation = true;
     [SerializeField] private BodySocket[] bodySockets;
@@ -11,8 +11,8 @@ public class ItemSocketFollowTransform : MonoBehaviour
     private Quaternion _currentHMDRotation;
     void Update()
     {
-        _currentHMDlocalPosition = HMD.transform.localPosition;
-        _currentHMDRotation = HMD.transform.rotation;
+        _currentHMDlocalPosition = HMD.localPosition;
+        _currentHMDRotation = HMD.rotation;
         foreach (var bodySocket in bodySockets)
         {
             UpdateBodySocketHeight(bodySocket);
@@ -22,7 +22,7 @@ public class ItemSocketFollowTransform : MonoBehaviour
 
     private void UpdateBodySocketHeight(BodySocket bodySocket)
     {
-        bodySocket.transform.localPosition = new Vector3(bodySocket.transform.localPosition.x, (_currentHMDlocalPosition.y * bodySocket.heightRatio), bodySocket.transform.localPosition.z);
+        bodySocket.transform.localPosition = new Vector3(bodySocket.transform.localPosition.x, (HMD.position.y * bodySocket.heightRatio), bodySocket.transform.localPosition.z);
     }
 
     private void UpdateSocketInventory()
