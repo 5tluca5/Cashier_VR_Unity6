@@ -16,17 +16,21 @@ public class ItemSpawner : MonoBehaviour
     private float currentSpawnTime;
     [SerializeField] private XRGrabInteractable spawnedItem;
 
+    private void Awake()
+    {
+        spawnedItem = GetComponentInChildren<XRGrabInteractable>();
+        socketInteractor.selectExited.AddListener(args => spawnedItem = null);
+    }
+
     private void Start()
     {
         progressBarImage.fillAmount = 0;
-        spawnedItem = GetComponentInChildren<XRGrabInteractable>();
         AttachToSocket();
     }
 
     private void Update()
     {
-        Debug.Log(socketInteractor.hasSelection);
-        if (!socketInteractor.hasSelection)
+        if (socketInteractor.GetOldestInteractableSelected() == null)
         {
             currentSpawnTime += Time.deltaTime;
             progressBarImage.fillAmount = currentSpawnTime / spawnTime;

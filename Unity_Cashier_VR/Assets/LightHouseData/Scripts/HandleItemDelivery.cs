@@ -24,7 +24,7 @@ public class HandleItemDelivery : MonoBehaviour
     [Header("Customer Request List")]
     [SerializeField] private List<CustomerRequestData> customerRequestsList;
 
-    public System.Action OnDeliveryComplete;
+    public System.Action<int> OnDeliveryComplete;
 
     private void Awake()
     {
@@ -98,6 +98,9 @@ public class HandleItemDelivery : MonoBehaviour
 
         foreach (var customerRequest in customerRequestsList)
         {
+            if (customerRequest.requestedItemsList.Count != itemsOnTableList.Count)
+                continue; // If item count is not equal, skip to next request
+
             isReadyForDelivery = true;
             foreach (var item in customerRequest.requestedItemsList)
             {
@@ -119,7 +122,7 @@ public class HandleItemDelivery : MonoBehaviour
             }
             if (isReadyForDelivery)
             {
-                //Debug.Log("Ready for delivery with ID: " + customerRequest.GetRequestID());
+                Debug.Log("Ready for delivery with ID: " + customerRequest.GetRequestID());
                 deliveryRequest = customerRequest; // Set delivery request for deletion as we can't delete from list while iterating
                 break;
             }
@@ -129,19 +132,21 @@ public class HandleItemDelivery : MonoBehaviour
         {
             customerRequestsList.Remove(deliveryRequest); // Remove delivery request from list
             SpawnCoins(cost);
-            deliverableItemsList.ForEach(x => x.transform.localScale = Vector3.one * .25f); // Destroy deliverable items
-            OnDeliveryComplete?.Invoke(); // Invoke delivery complete event
+            deliverableItemsList.ForEach(x => Destroy(x.gameObject)); // Destroy deliverable items
+            OnDeliveryComplete?.Invoke(deliveryRequest.requestID); // Invoke delivery complete event
         }
     }
 
     private void SpawnCoins(int cost)
     {
-        int spawnCount = Mathf.CeilToInt(cost / 5);
-        Debug.Log("Spawn Count: " + spawnCount);
+        int spawnCount = cost / CoinPouchHandler.COIN_WORTH; // !!! Dirty Code !!! => GameManager or Something is required for handling these sort of things! (which we don't have yet)
+        Debug.Log("Spawn Count: " + spawnCount + " Cost: " + cost);
         for (int i = 0; i < spawnCount; i++)
         {
-            var spawnPosition = coinSpawnPoint.position + new Vector3(Random.Range(-1f, 1f), Random.Range(0f, 2f), Random.Range(-.5f, .5f));
-            var coin = Instantiate(coinPrefab, spawnPosition, Quaternion.identity, coinSpawnPoint);
+            var spawnPosition = new Vector3(Random.Range(-1f, 1f), Random.Range(0f, 2f), Random.Range(-.5f, .5f));
+            var spawnRotation = Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
+            var coin = Instantiate(coinPrefab, coinSpawnPoint);
+            coin.transform.SetLocalPositionAndRotation(spawnPosition, spawnRotation);
         }
     }
 
