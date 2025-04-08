@@ -45,7 +45,7 @@ public class CoinPouchHandler : MonoBehaviour
         {
             OnCoinDroppedInPouch?.Invoke(++coinCount);
             Debug.Log("Coin Dropped In Pouch: " + coinCount);
-            Destroy(other.gameObject);
+            Destroy(itemTag.gameObject);
         }
     }
 }
