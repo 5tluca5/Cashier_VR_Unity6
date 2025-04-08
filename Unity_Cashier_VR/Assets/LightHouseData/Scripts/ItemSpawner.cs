@@ -26,6 +26,33 @@ public class ItemSpawner : MonoBehaviour
     {
         progressBarImage.fillAmount = 0;
         AttachToSocket();
+
+        SetSpawnTime();
+
+        UpgradeManager.Instance.OnSpawnTimeReductionUpgraded += SetSpawnTime;
+    }
+
+    private void OnDestroy()
+    {
+        UpgradeManager.Instance.OnSpawnTimeReductionUpgraded -= SetSpawnTime;
+    }
+
+    private void SetSpawnTime()
+    {
+        var itemTag = prefabToSpawn.GetComponent<ItemTag>();
+        switch (itemTag.itemTag)
+        {
+            case ItemType.Weapon_Uncommon:
+            case ItemType.Potion_Medium:
+            case ItemType.Shield_Uncommon:
+                spawnTime -= UpgradeManager.Instance.GetUncommonItemSpawnTimeReductionInSec();
+                break;
+            case ItemType.Weapon_Golden:
+            case ItemType.Potion_Large:
+            case ItemType.Shield_Golden:
+                spawnTime -= UpgradeManager.Instance.GetGoldenItemSpawnTimeReductionInSec();
+                break;
+        }
     }
 
     private void Update()
