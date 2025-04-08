@@ -40,7 +40,6 @@ public class CoinPouchHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.name);
         var itemTag = other.GetComponentInParent<ItemTag>();
         if (itemTag && itemTag.itemTag == ItemType.Coin)
         {

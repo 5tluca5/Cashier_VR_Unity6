@@ -32,7 +32,7 @@ public class DetectDeliveryStation : MonoBehaviour
         if (!detectionCollider.enabled) return;
 
         var deliveryStation = other.GetComponentInParent<HandleItemDelivery>();
-        Debug.Log("Delivery station entered: " + deliveryStation);
+        //Debug.Log("Delivery station entered: " + deliveryStation);
         if (deliveryStation && currentDelieveryStation != deliveryStation)
         {
             currentDelieveryStation = deliveryStation;
@@ -60,8 +60,12 @@ public class DetectDeliveryStation : MonoBehaviour
         detectionCollider.enabled = true;
     }
 
-    private void HandleDeliveryComplete()
+    private void HandleDeliveryComplete(int requstID)
     {
+        if (customerRequest.GetCustomerRequest().GetRequestID() != requstID)
+            return;
+
+        customerRequest.MarkCustomerRequestAsComplete();
         requestUI.Hide();
         currentDelieveryStation.OnDeliveryComplete -= HandleDeliveryComplete;
         detectionCollider.enabled = false;

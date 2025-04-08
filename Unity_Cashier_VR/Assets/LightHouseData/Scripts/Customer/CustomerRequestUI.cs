@@ -46,7 +46,7 @@ public class CustomerRequestUI : MonoBehaviour
         canvasGroup.DOFade(0f, .5f);
     }
 
-    public void SetRequestList(CustomerRequestData customerRequestData)
+    private void SetRequestList(CustomerRequestData customerRequestData)
     {
         foreach (Transform child in itemRequestListParent)
         {

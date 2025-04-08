@@ -193,6 +193,10 @@ PrefabInstance:
       propertyPath: storeItemData
       value: 
       objectReference: {fileID: 11400000, guid: 656f8485d98890945a0d4a53f0bec4ab, type: 2}
+    - target: {fileID: 5142036707974363009, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: m_AngularDrag
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5150358144288620409, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_Name
       value: Potion_Small_Blue

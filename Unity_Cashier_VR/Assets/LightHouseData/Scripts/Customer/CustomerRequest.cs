@@ -31,6 +31,11 @@ public class CustomerRequest : MonoBehaviour
     {
         return customerRequestData;
     }
+
+    public void MarkCustomerRequestAsComplete()
+    {
+        CustomerManager.Instance.RemoveCustomer(transform);
+    }
 }
 
 [System.Serializable]
