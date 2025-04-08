@@ -1,0 +1,65 @@
+{
+    "WindowShopper": {
+        "checkpoints": [
+            {
+                "steps": 565397,
+                "file_path": "results/V4/WindowShopper/WindowShopper-565397.onnx",
+                "reward": -0.4343438237500946,
+                "creation_time": 1744073979.0816052,
+                "auxillary_file_paths": [
+                    "results/V4/WindowShopper/WindowShopper-565397.pt"
+                ]
+            },
+            {
+                "steps": 999954,
+                "file_path": "results/V4/WindowShopper/WindowShopper-999954.onnx",
+                "reward": -0.4085134445939391,
+                "creation_time": 1744075242.6596951,
+                "auxillary_file_paths": [
+                    "results/V4/WindowShopper/WindowShopper-999954.pt"
+                ]
+            },
+            {
+                "steps": 1499999,
+                "file_path": "results/V4/WindowShopper/WindowShopper-1499999.onnx",
+                "reward": -0.3816401442838094,
+                "creation_time": 1744076635.955445,
+                "auxillary_file_paths": [
+                    "results/V4/WindowShopper/WindowShopper-1499999.pt"
+                ]
+            },
+            {
+                "steps": 1842588,
+                "file_path": "results/V4/WindowShopper/WindowShopper-1842588.onnx",
+                "reward": -0.394390345660791,
+                "creation_time": 1744077596.017243,
+                "auxillary_file_paths": [
+                    "results/V4/WindowShopper/WindowShopper-1842588.pt"
+                ]
+            },
+            {
+                "steps": 1864188,
+                "file_path": "results/V4/WindowShopper/WindowShopper-1864188.onnx",
+                "reward": -4.398749698139727,
+                "creation_time": 1744077694.678455,
+                "auxillary_file_paths": [
+                    "results/V4/WindowShopper/WindowShopper-1864188.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1864188,
+            "file_path": "results/V4/WindowShopper.onnx",
+            "reward": -4.398749698139727,
+            "creation_time": 1744077694.678455,
+            "auxillary_file_paths": [
+                "results/V4/WindowShopper/WindowShopper-1864188.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0"
+    }
+}
