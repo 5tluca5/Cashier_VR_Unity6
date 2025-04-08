@@ -139,7 +139,7 @@ public class HandleItemDelivery : MonoBehaviour
 
     private void SpawnCoins(int cost)
     {
-        int spawnCount = cost / 5;
+        int spawnCount = cost / CoinPouchHandler.COIN_WORTH; // !!! Dirty Code !!! => GameManager or Something is required for handling these sort of things! (which we don't have yet)
         Debug.Log("Spawn Count: " + spawnCount + " Cost: " + cost);
         for (int i = 0; i < spawnCount; i++)
         {

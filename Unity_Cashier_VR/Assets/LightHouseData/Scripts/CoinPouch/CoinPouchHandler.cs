@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 [RequireComponent(typeof(Collider))]
 public class CoinPouchHandler : MonoBehaviour
 {
+    public const int COIN_WORTH = 5;
     [SerializeField] private XRSocketInteractor coinPouchSocketInteractor;
 
     [SerializeField] private int coinCount;
@@ -43,7 +44,8 @@ public class CoinPouchHandler : MonoBehaviour
         var itemTag = other.GetComponentInParent<ItemTag>();
         if (itemTag && itemTag.itemTag == ItemType.Coin)
         {
-            OnCoinDroppedInPouch?.Invoke(++coinCount);
+            coinCount += COIN_WORTH;
+            OnCoinDroppedInPouch?.Invoke(coinCount);
             Debug.Log("Coin Dropped In Pouch: " + coinCount);
             Destroy(itemTag.gameObject);
         }
