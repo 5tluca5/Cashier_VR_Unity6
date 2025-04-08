@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_MaterialIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1009523207640121983, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: cost
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1637624880468778975, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
