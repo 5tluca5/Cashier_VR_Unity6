@@ -115,6 +115,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: spawnTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866841208218965009, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
       propertyPath: prefabToSpawn
       value: 
       objectReference: {fileID: 3190529772266486958, guid: 0d6c73df959ecf74b958ba61d185ab3d, type: 3}

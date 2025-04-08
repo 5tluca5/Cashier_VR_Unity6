@@ -21,14 +21,14 @@ public class CoinPouchUIHandler : MonoBehaviour
     {
         coinPouchHandler.OnCoinPouchGrabbed += OnCoinPouchGrabbed;
         coinPouchHandler.OnCoinPouchReleased += OnCoinPouchReleased;
-        coinPouchHandler.OnCoinDroppedInPouch += OnCoinDroppedInPouch;
+        coinPouchHandler.OnCoinCountChanged += OnCoinDroppedInPouch;
     }
 
     private void OnDisable()
     {
         coinPouchHandler.OnCoinPouchGrabbed -= OnCoinPouchGrabbed;
         coinPouchHandler.OnCoinPouchReleased -= OnCoinPouchReleased;
-        coinPouchHandler.OnCoinDroppedInPouch -= OnCoinDroppedInPouch;
+        coinPouchHandler.OnCoinCountChanged -= OnCoinDroppedInPouch;
     }
 
     private void OnCoinDroppedInPouch(int coinCount)

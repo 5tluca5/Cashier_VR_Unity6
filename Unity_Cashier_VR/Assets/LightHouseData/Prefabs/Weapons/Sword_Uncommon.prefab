@@ -143,13 +143,17 @@ PrefabInstance:
       propertyPath: m_MaterialIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1009523207640121983, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
+      propertyPath: cost
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1637624880468778975, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1749699334128763834, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: itemTag
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2072803565416780760, guid: 2daff3d4dffbfdb438a1eccdfdc3c1f9, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,6 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 [RequireComponent(typeof(Collider))]
 public class CoinPouchHandler : MonoBehaviour
 {
+    public static CoinPouchHandler Instance { private set; get; }
+
     public const int COIN_WORTH = 5;
     [SerializeField] private XRSocketInteractor coinPouchSocketInteractor;
 
@@ -12,10 +14,17 @@ public class CoinPouchHandler : MonoBehaviour
 
     public System.Action OnCoinPouchGrabbed;
     public System.Action OnCoinPouchReleased;
-    public System.Action<int> OnCoinDroppedInPouch;
+    public System.Action<int> OnCoinCountChanged;
 
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         GetComponent<Collider>().isTrigger = true;
         coinPouchSocketInteractor.selectEntered.AddListener(OnPouchDropped);
         coinPouchSocketInteractor.selectExited.AddListener(OnPouchPickedUp);
@@ -25,6 +34,14 @@ public class CoinPouchHandler : MonoBehaviour
     {
         coinPouchSocketInteractor.selectEntered.RemoveListener(OnPouchDropped);
         coinPouchSocketInteractor.selectExited.RemoveListener(OnPouchPickedUp);
+    }
+
+    public int GetCoinCount() => coinCount;
+
+    public void DeductCoins(int count)
+    {
+        coinCount -= count;
+        OnCoinCountChanged?.Invoke(coinCount);
     }
 
     private void OnPouchDropped(SelectEnterEventArgs eventArgs)
@@ -45,7 +62,7 @@ public class CoinPouchHandler : MonoBehaviour
         if (itemTag && itemTag.itemTag == ItemType.Coin)
         {
             coinCount += COIN_WORTH;
-            OnCoinDroppedInPouch?.Invoke(coinCount);
+            OnCoinCountChanged?.Invoke(coinCount);
             Debug.Log("Coin Dropped In Pouch: " + coinCount);
             Destroy(itemTag.gameObject);
         }
