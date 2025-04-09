@@ -60,6 +60,26 @@ PrefabInstance:
       propertyPath: prefabToSpawn
       value: 
       objectReference: {fileID: 8410433906800820472, guid: d4f48b965e628e049817a269f430352d, type: 3}
+    - target: {fileID: 6712492751066875120, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712492751066875120, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712492751066875120, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712492751066875120, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712492751066875120, guid: 5cbbd5b42d411ec40aecb5caf002f315, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -95,23 +115,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4378023833618486153, guid: d4f48b965e628e049817a269f430352d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4378023833618486153, guid: d4f48b965e628e049817a269f430352d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 4378023833618486153, guid: d4f48b965e628e049817a269f430352d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4378023833618486153, guid: d4f48b965e628e049817a269f430352d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4378023833618486153, guid: d4f48b965e628e049817a269f430352d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4378023833618486153, guid: d4f48b965e628e049817a269f430352d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
