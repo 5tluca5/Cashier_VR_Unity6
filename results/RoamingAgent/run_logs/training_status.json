@@ -1,0 +1,65 @@
+{
+    "RoamingAgent": {
+        "checkpoints": [
+            {
+                "steps": 821831,
+                "file_path": "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-821831.onnx",
+                "reward": 11048.741628021002,
+                "creation_time": 1744160037.014081,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-821831.pt"
+                ]
+            },
+            {
+                "steps": 851129,
+                "file_path": "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-851129.onnx",
+                "reward": 9001.605756023351,
+                "creation_time": 1744160222.3551283,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-851129.pt"
+                ]
+            },
+            {
+                "steps": 864783,
+                "file_path": "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-864783.onnx",
+                "reward": 6856.299892568588,
+                "creation_time": 1744160298.2919662,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-864783.pt"
+                ]
+            },
+            {
+                "steps": 999993,
+                "file_path": "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-999993.onnx",
+                "reward": null,
+                "creation_time": 1744160514.3270893,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-999993.pt"
+                ]
+            },
+            {
+                "steps": 1000121,
+                "file_path": "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-1000121.onnx",
+                "reward": null,
+                "creation_time": 1744160514.396605,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-1000121.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000121,
+            "file_path": "results\\RoamingAgent\\RoamingAgent.onnx",
+            "reward": null,
+            "creation_time": 1744160514.396605,
+            "auxillary_file_paths": [
+                "results\\RoamingAgent\\RoamingAgent\\RoamingAgent-1000121.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

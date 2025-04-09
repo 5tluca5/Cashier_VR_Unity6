@@ -12226,7 +12226,7 @@ PrefabInstance:
       objectReference: {fileID: 23800000, guid: 836cfdd6fdd8e4c01aafb38a3ccde4b5, type: 2}
     - target: {fileID: 4377217251678871632, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
       propertyPath: 'posibleBehaviours.Array.data[0]'
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8962023668224593890, guid: f1e68d8d17f1f43a6aca21559bdb6c6a, type: 3}
       propertyPath: m_LocalPosition.x

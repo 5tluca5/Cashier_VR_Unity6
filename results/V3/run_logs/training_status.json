@@ -1,0 +1,56 @@
+{
+    "WindowShopper": {
+        "checkpoints": [
+            {
+                "steps": 499974,
+                "file_path": "results/V3/WindowShopper/WindowShopper-499974.onnx",
+                "reward": null,
+                "creation_time": 1744068023.339075,
+                "auxillary_file_paths": [
+                    "results/V3/WindowShopper/WindowShopper-499974.pt"
+                ]
+            },
+            {
+                "steps": 637274,
+                "file_path": "results/V3/WindowShopper/WindowShopper-637274.onnx",
+                "reward": null,
+                "creation_time": 1744068489.112868,
+                "auxillary_file_paths": [
+                    "results/V3/WindowShopper/WindowShopper-637274.pt"
+                ]
+            },
+            {
+                "steps": 648474,
+                "file_path": "results/V3/WindowShopper/WindowShopper-648474.onnx",
+                "reward": null,
+                "creation_time": 1744069669.603308,
+                "auxillary_file_paths": [
+                    "results/V3/WindowShopper/WindowShopper-648474.pt"
+                ]
+            },
+            {
+                "steps": 659674,
+                "file_path": "results/V3/WindowShopper/WindowShopper-659674.onnx",
+                "reward": null,
+                "creation_time": 1744069709.2790751,
+                "auxillary_file_paths": [
+                    "results/V3/WindowShopper/WindowShopper-659674.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 659674,
+            "file_path": "results/V3/WindowShopper.onnx",
+            "reward": null,
+            "creation_time": 1744069709.2790751,
+            "auxillary_file_paths": [
+                "results/V3/WindowShopper/WindowShopper-659674.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0"
+    }
+}

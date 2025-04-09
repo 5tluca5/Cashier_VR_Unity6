@@ -1,0 +1,56 @@
+{
+    "RoamingAgent": {
+        "checkpoints": [
+            {
+                "steps": 102798,
+                "file_path": "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-102798.onnx",
+                "reward": null,
+                "creation_time": 1744167925.6651938,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-102798.pt"
+                ]
+            },
+            {
+                "steps": 499976,
+                "file_path": "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-499976.onnx",
+                "reward": 2781.385320516733,
+                "creation_time": 1744168277.6177828,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-499976.pt"
+                ]
+            },
+            {
+                "steps": 999966,
+                "file_path": "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-999966.onnx",
+                "reward": 2859.607412815094,
+                "creation_time": 1744168661.5431175,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-999966.pt"
+                ]
+            },
+            {
+                "steps": 1000030,
+                "file_path": "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-1000030.onnx",
+                "reward": 2859.607412815094,
+                "creation_time": 1744168661.6078017,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-1000030.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000030,
+            "file_path": "results\\RoamingAgent_V3\\RoamingAgent.onnx",
+            "reward": 2859.607412815094,
+            "creation_time": 1744168661.6078017,
+            "auxillary_file_paths": [
+                "results\\RoamingAgent_V3\\RoamingAgent\\RoamingAgent-1000030.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
