@@ -11,8 +11,19 @@ public class CustomerManager : MonoBehaviour
     [SerializeField] private Transform customerSpawnPoint;
     [SerializeField] private float customerSpawnTimeMin = 5f;
     [SerializeField] private float customerSpawnTimeMax = 15f;
-    [SerializeField] private float currrentSpawnTime = 0f;
-    [SerializeField] private int customerCount = 0;
+
+    [Header("Customer ML-Agent Settings")]
+    [SerializeField] private float ghostSpawntimeMin = 5f;
+    [SerializeField] private float ghostSpawntimeMax = 15f;
+    [SerializeField] private int maxGhostCount = 5;
+    [SerializeField] private GameObject mlAgentPrefab;
+    [SerializeField] private Transform mlAgentSpawnPoint;
+    private List<GameObject> ghostList;
+
+    private float currrentSpawnTime = 0f;
+    private float ghostSpawnTime = 0f;
+    private int customerCount = 0;
+    private int ghostCount = 0;
 
     [Header("Customer Stand Settings")]
     [Tooltip("The transform used as the point where the customer will stand and request for items.")]
@@ -32,10 +43,45 @@ public class CustomerManager : MonoBehaviour
         Instance = this;
         availableStandPointList = new(customerStandPoints);
         customersList = new();
+        ghostList = new();
+
+        for (int i = 0; i < maxGhostCount; i++)
+            SpawnGhost();
+
         MaxCustomerSpawnCount = Random.Range(3, customerStandPoints.Length);
     }
 
     private void Update()
+    {
+        HandleCustomerSpawn();
+
+        HandleGhostSpawn();
+    }
+
+    private void HandleGhostSpawn()
+    {
+        if (ghostCount >= maxGhostCount)
+            return;
+
+        ghostSpawnTime += Time.deltaTime;
+
+        float spawnTime = Random.Range(ghostSpawntimeMin, ghostSpawntimeMax);
+        if (ghostSpawnTime >= spawnTime)
+        {
+            ghostSpawnTime = 0f;
+            ghostList[ghostCount].SetActive(true);
+            ghostCount++;
+        }
+    }
+
+    private void SpawnGhost()
+    {
+        var ghost = Instantiate(mlAgentPrefab, mlAgentSpawnPoint.position, mlAgentSpawnPoint.rotation, mlAgentSpawnPoint);
+        ghost.SetActive(false);
+        ghostList.Add(ghost);
+    }
+
+    private void HandleCustomerSpawn()
     {
         if (customerCount >= MaxCustomerSpawnCount)
             return;

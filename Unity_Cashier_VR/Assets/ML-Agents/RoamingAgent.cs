@@ -102,7 +102,7 @@ public class RoamingAgent : Agent
         }
 
         var dir = target.localPosition - transform.localPosition;
-
+        dir.y = modelGFX.forward.y;
         modelGFX.forward = Vector3.Slerp(modelGFX.forward, dir, Time.deltaTime * 2f);
         lastDistance = distanceToTarget;
     }

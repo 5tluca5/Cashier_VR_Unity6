@@ -1,3 +1,4 @@
+using Unity.MLAgents;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,10 +13,11 @@ public class StoreDoorAnim : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        var agent = other.GetComponentInParent<NavMeshAgent>();
-        if (agent)
+        var customer = other.GetComponentInParent<NavMeshAgent>();
+        var agent = other.GetComponent<RoamingAgent>();
+        if (customer || agent)
         {
             animator.SetBool(DoorOpenHash, true);
         }
@@ -23,8 +25,9 @@ public class StoreDoorAnim : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        var agent = other.GetComponentInParent<NavMeshAgent>();
-        if (agent)
+        var customer = other.GetComponentInParent<NavMeshAgent>();
+        var agent = other.GetComponent<RoamingAgent>();
+        if (customer || agent)
         {
             animator.SetBool(DoorOpenHash, false);
         }
