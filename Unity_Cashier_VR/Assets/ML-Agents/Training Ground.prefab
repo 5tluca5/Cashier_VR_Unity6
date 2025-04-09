@@ -489,7 +489,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2580179642142516387}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 83960a7d5790f49dcbc0a255f57c855e, type: 2}
   m_CullingMode: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   MaxStep: 0
   target: {fileID: 6372224371695255557}
   pathIndex: 0
-  moveSpeed: 5
+  moveSpeed: 3
   path:
   - {fileID: 1619707493610447608}
   - {fileID: 275209750986435205}
@@ -1131,6 +1131,7 @@ MonoBehaviour:
   - {fileID: 2725284695170951413}
   - {fileID: 3833765023216774955}
   spawnPos: {x: 0, y: 0, z: 0}
+  modelGFX: {fileID: 3457959950359159419}
   simulationTime: 0
   closestDistance: 100
   lastDistance: 0

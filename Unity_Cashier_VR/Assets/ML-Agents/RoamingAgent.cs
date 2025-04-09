@@ -14,6 +14,7 @@ public class RoamingAgent : Agent
     public float moveSpeed = 5f;
     public Transform[] path;
     public Vector3 spawnPos = Vector3.zero;
+    public Transform modelGFX;
 
     public float simulationTime = 0f;
 
@@ -100,6 +101,9 @@ public class RoamingAgent : Agent
             EndEpisode();
         }
 
+        var dir = target.localPosition - transform.localPosition;
+
+        modelGFX.forward = Vector3.Slerp(modelGFX.forward, dir, Time.deltaTime * 2f);
         lastDistance = distanceToTarget;
     }
 
