@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1744170708",
+        "python_version": "3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\Python310\\Scripts\\mlagents-learn config/ppo/RoamingAgent.yaml --run-id=RoamingAgent_V4 --force",
+        "mlagents_version": "1.2.0.dev0",
+        "mlagents_envs_version": "1.2.0.dev0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.2.2+cu121",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1744170711"
+    },
+    "total": 2.4731797000004008,
+    "count": 1,
+    "self": 0.0031673000012233388,
+    "children": {
+        "run_training.setup": {
+            "total": 0.04978999999912048,
+            "count": 1,
+            "self": 0.04978999999912048
+        },
+        "TrainerController.start_learning": {
+            "total": 2.420222400000057,
+            "count": 1,
+            "self": 5.990000136080198e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.420150300000387,
+                    "count": 1,
+                    "self": 2.420150300000387
+                },
+                "TrainerController._save_models": {
+                    "total": 1.219999830937013e-05,
+                    "count": 1,
+                    "self": 1.219999830937013e-05
+                }
+            }
+        }
+    }
+}

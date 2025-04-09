@@ -1,0 +1,47 @@
+{
+    "RoamingAgent": {
+        "checkpoints": [
+            {
+                "steps": 499974,
+                "file_path": "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-499974.onnx",
+                "reward": 10138.641613562902,
+                "creation_time": 1744171264.5899763,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-499974.pt"
+                ]
+            },
+            {
+                "steps": 999936,
+                "file_path": "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-999936.onnx",
+                "reward": 14106.459985542297,
+                "creation_time": 1744171659.7871137,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-999936.pt"
+                ]
+            },
+            {
+                "steps": 1000064,
+                "file_path": "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-1000064.onnx",
+                "reward": 14106.459985542297,
+                "creation_time": 1744171659.9808578,
+                "auxillary_file_paths": [
+                    "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-1000064.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000064,
+            "file_path": "results\\RoamingAgent_V5\\RoamingAgent.onnx",
+            "reward": 14106.459985542297,
+            "creation_time": 1744171659.9808578,
+            "auxillary_file_paths": [
+                "results\\RoamingAgent_V5\\RoamingAgent\\RoamingAgent-1000064.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
